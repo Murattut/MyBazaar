@@ -24,7 +24,7 @@ public class Admin extends Employee{
         System.out.println("Email: " + getEmail());
         System.out.println("Date of Birth: " + getDate_of_birth());
     }
-    public void add_new_customar(String admin_name, String customer_name, String customer_email,
+    public static void add_new_customar(String admin_name, String customer_name, String customer_email,
                                  String date_of_birth, Double customer_balance,String customer_password){
         boolean is_admin_true = true;
         for(Admin admin : Admin_list){
@@ -39,7 +39,7 @@ public class Admin extends Employee{
             System.out.printf("No admin person named "+ admin_name +" exists!\n");
         }
     }
-    public void Show_Customer(String admin_name, int CustomerId){
+    public static void Show_Customer(String admin_name, int CustomerId){
         boolean is_admin_true = true;
         for(Admin admin : Admin_list){
             if(Objects.equals(admin.getName(), admin_name)){
@@ -53,7 +53,7 @@ public class Admin extends Employee{
             System.out.printf("No admin person named "+ admin_name +" exists!\n");
         }
     }
-    public void Show_Customers(String admin_name){
+    public static void Show_Customers(String admin_name){
         boolean is_admin_true = true;
         for(Admin admin : Admin_list){
             if(Objects.equals(admin.getName(), admin_name)){
@@ -66,7 +66,7 @@ public class Admin extends Employee{
             System.out.printf("No admin person named "+ admin_name +" exists!\n");
         }
     }
-    public void Show_Admin_Info(String admin_name){
+    public static void Show_Admin_Info(String admin_name){
         boolean is_admin_true = true;
         for(Admin admin : Admin_list){
             if(Objects.equals(admin.getName(), admin_name)){
@@ -77,7 +77,7 @@ public class Admin extends Employee{
             System.out.printf("No admin person named "+ admin_name +" exists!\n");
         }
     }
-    public void Create_campaign(String admin_name,String start_date, String end_date, String Item_type, Integer rate){
+    public static void Create_campaign(String admin_name,String start_date, String end_date, String Item_type, Integer rate){
         boolean is_admin_true = true;
         for(Admin admin : Admin_list){
             if(Objects.equals(admin.getName(), admin_name)){
@@ -92,7 +92,7 @@ public class Admin extends Employee{
             System.out.printf("No admin person named "+ admin_name +" exists!\n");
         }
     }
-    public void Add_Admin(String admin_name, String new_admin_name, String new_admin_email,
+    public static void Add_Admin(String admin_name, String new_admin_name, String new_admin_email,
                           String new_admin_date_of_birth, Double new_admin_salary, String new_admin_password){
         boolean is_admin_true = true;
         for(Admin admin : Admin_list){
@@ -107,7 +107,7 @@ public class Admin extends Employee{
             System.out.printf("No admin person named "+ admin_name +" exists!\n");
         }
     }
-    public void Add_Tech(String admin_name, String new_Tech_name, String new_Tech_email,
+    public static void Add_Tech(String admin_name, String new_Tech_name, String new_Tech_email,
                           String new_Tech_date_of_birth, Double new_Tech_salary, Boolean new_Tech_IsSenior){
         boolean is_admin_true = true;
         for(Admin admin : Admin_list){

@@ -88,9 +88,10 @@ public class Employee extends Person{
     }
     public static void Disp_item_soft(String admin_Tech_name,String[] Array_name) {
         boolean is_admin_tech_true = true;
+        String[] stringsWithoutColon = removeColon(Array_name);
         for (Admin admin : Admin.Admin_list) {
             if (Objects.equals(admin.getName(), admin_Tech_name)) {
-                for (String temp_name : Array_name) {
+                for (String temp_name : stringsWithoutColon) {
                     switch (temp_name) {
                         case "HAIRCARE":
                             for (Hair_care hair_care : Hair_care.hair_CareLinkedList)
@@ -143,7 +144,7 @@ public class Employee extends Person{
                             break;
 
                         default:
-                            System.out.print("something go wrong");
+                            System.out.print("something go wrong \n");
                             break;
 
                     }
@@ -153,60 +154,61 @@ public class Employee extends Person{
         }
         for (Technician tech : Technician.Technician_list) {
             if (Objects.equals(tech.getName(), admin_Tech_name)) {
-                for (String temp_name : Array_name) {
+                for (String temp_name : stringsWithoutColon) {
+                    //System.out.printf(temp_name);
                     switch (temp_name) {
-                        case "HairCare":
+                        case "HAIRCARE":
                             for (Hair_care hair_care : Hair_care.hair_CareLinkedList)
                                 hair_care.displayData();
                             break;
 
-                        case "Perfume":
+                        case "PERFUME":
                             for (Perfume perfume : Perfume.perfumeLinkedList)
                                 perfume.displayData();
                             break;
 
-                        case "SkinCare":
+                        case "SKINCARE":
                             for (Skin_care skinCare : Skin_care.skin_careLinkedList)
                                 skinCare.displayData();
                             break;
 
-                        case "Desktop":
+                        case "DESKTOP":
                             for (Desktop desktop : Desktop.desktopLinkedList)
                                 desktop.displayData();
                             break;
 
-                        case "Laptop":
+                        case "LAPTOP":
                             for (Laptop laptop : Laptop.laptopLinkedList)
                                 laptop.displayData();
                             break;
 
-                        case "Tablet":
+                        case "TABLET":
                             for (Tablet tablet : Tablet.tabletLinkedList)
                                 tablet.displayData();
                             break;
 
-                        case "SmartPhone":
+                        case "SMARTPHONE":
                             for (Smart_phone smartPhone : Smart_phone.smart_phoneLinkedList)
                                 smartPhone.displayData();
                             break;
 
-                        case "Tv":
+                        case "TV":
                             for (Tv tv : Tv.TvLinkedList)
                                 tv.displayData();
                             break;
 
-                        case "Book":
+                        case "BOOK":
                             for (Book book : Book.bookLinkedList)
                                 book.displayData();
                             break;
 
-                        case "CdDvd":
+                        case "CDDVD":
                             for (Cd_Dvd cdDv : Cd_Dvd.cd_dvdLinkedList)
                                 cdDv.displayData();
                             break;
 
                         default:
-                            System.out.print("some thing go wrong");
+                            System.out.print("some thing go wrong\n");
                             break;
                     }
                 }
@@ -395,5 +397,23 @@ public class Employee extends Person{
         }if(is_admin_tech_true) {
             System.out.printf("No admin person named " + admin_Tech_name + " exists!\n");
         }
+    }
+    //some string have : at the end of them so we need to remove them
+    private static String[] removeColon(String[] inputArray) {
+        String[] resultArray = new String[inputArray.length];
+
+        for (int i = 0; i < inputArray.length; i++) {
+            String originalString = inputArray[i];
+
+            // Check if the string ends with a colon
+            if (originalString.endsWith(":")) {
+                // Remove the last character (which is the colon)
+                resultArray[i] = originalString.substring(0, originalString.length() - 1);
+            } else {
+                // If the string doesn't end with a colon, keep it as is
+                resultArray[i] = originalString;
+            }
+        }
+        return resultArray;
     }
 }

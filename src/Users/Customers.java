@@ -100,53 +100,69 @@ public class Customers extends Person{
 
     }
     public static void Ch_pass(Integer Id,String old_password,String new_password){
+        boolean is_customer_true = true;
         for (Customers customer : customer_list) {
             if (customer.getCustomerId().equals(Id)) {
                 if(customer.getPassword().equals(old_password)){
                     customer.setPassword(new_password);
                     System.out.println("Password changed successfully\n");
+                    is_customer_true = false;
+                    break;
                 }else {
                     System.out.println("The given password does not match the current password. Please try again.\n");
                 }
-            }else{
-                System.out.println("No customer with ID number "+ Id +" exists!\n");
             }
+        }if(is_customer_true){
+            System.out.printf("No customer with ID number "+ Id +" exists!\n");
         }
     }
     public static void Deposit_money(Integer Id,Double amount){
+        boolean is_customer_true = true;
         for (Customers customer : customer_list) {
             if (customer.getCustomerId().equals(Id)) {
+                is_customer_true = false;
                 customer.setBalance(customer.getBalance()+amount);
                 System.out.println("Deposit completed successfully\n");
-            }else{
-                System.out.println("No customer with ID number "+ Id +" exists!\n");
+                break;
             }
+        }if (is_customer_true){
+            System.out.printf("No customer with ID number "+ Id +" exists!\n");
         }
     }
     public static void Show_champaigns(Integer Id){
+        boolean is_customer_true = true;
+        boolean is_campaign_true = true;
         for (Customers customer : customer_list) {
             if (customer.getCustomerId().equals(Id)) {
+                is_customer_true = false;
                 for(Campaigns campaign: Campaigns.campaign_list){
+                    is_campaign_true = false;
                     System.out.printf(campaign.getDiscount_rate()+" sales of " +
                             campaign.getItemType()+ " until " + campaign.getEndDate());
+                    break;
                 }
-
-            }else{
-                System.out.println("No customer with ID number "+ Id +" exists!\n");
             }
+        }if (is_customer_true) {
+            System.out.printf("No customer with ID number " + Id + " exists!\n");
+        }if (is_campaign_true){
+            System.out.printf("No campaign has been created so far!\n");
         }
     }
     public static void Add_to_cart(Integer CustomerId,Integer Item_ID){
+        boolean is_customer_true = true;
         for (Customers customer : customer_list) {
             if (customer.getCustomerId().equals(CustomerId)) {
+                is_customer_true = false;
                 Add_to_cart_sub_function(Item_ID);
                 System.out.println("Item added to cart successfully");
-            }else{
-                System.out.println("No customer with ID number "+ CustomerId +" exists!");
+                break;
             }
+        }if(is_customer_true){
+            System.out.printf("No customer with ID number "+ CustomerId +" exists!\n");
         }
     }
     public static void Add_to_cart_sub_function(Integer Item_Id){
+        //boolean is_customer_true = true;
         for (Hair_care Temp : Hair_care.hair_CareLinkedList) {
             if (Objects.equals(Temp.getId(), Item_Id)) {
                 Temp_stack.push(Temp);
@@ -218,39 +234,52 @@ public class Customers extends Person{
         }
     }
     public static void Empty_cart(Integer CustomerId){
+        boolean is_customer_true = true;
         for (Customers customer : customer_list) {
             if (customer.getCustomerId().equals(CustomerId)) {
+                is_customer_true = false;
                 Temp_stack.empty();
                 System.out.println("The cart has been emptied.\n");
-            }else{
-                System.out.println("No customer with ID number "+ CustomerId +" exists!\n");
+                break;
             }
+        }if (is_customer_true){
+            System.out.printf("No customer with ID number "+ CustomerId +" exists!\n");
         }
     }
     public static void Order(Integer CustomerId, String Customer_Password){
+        boolean is_customer_true = true;
+        boolean is_password_true = true;
+        boolean is_cart_empty = true;
+        boolean is_balance_enough = true;
         for (Customers customer : customer_list) {
             if (customer.getCustomerId().equals(CustomerId)) {
+                is_customer_true = false;
                 if(customer.getPassword().equals(Customer_Password)){
+                    is_password_true = false;
                    if(!Temp_stack.isEmpty()) {
+                          is_cart_empty = false;
                        double total_price = 0;
                        for (int i = 0; i < Temp_stack.size(); i++){
                            total_price = total_price + ((Items) Temp_stack.get(i)).getPrice();
                            System.out.print(total_price);
                            if(customer.getBalance() >= total_price) {
+                                 is_balance_enough = false;
                                customer.setBalance(customer.getBalance() - total_price);
                                System.out.println("\nOrder placed successfully\n");
-                           }else {
-                               System.out.println("\nOrder could not be placed. Insufficient funds.\n");
+                               break;
                            }
                        }
-                   }else{
-                       System.out.println("\nYou should add some items to your cart before order request!\n");}
+                   }
                 }
-                else{
-                    System.out.println("\nOrder could not be placed. Invalid password.\n");}
             }
-            else{
-                System.out.println("\nNo customer with ID number "+ CustomerId +" exists!\n");}
+        }if (is_customer_true) {
+            System.out.printf("No customer with ID number " + CustomerId + " exists!\n");
+        }if (is_password_true) {
+            System.out.printf("\nOrder could not be placed. Invalid password.\n");
+        }if (is_cart_empty) {
+            System.out.printf("You should add some items to your cart before order request!\n");
+        }if (is_balance_enough) {
+            System.out.printf("Order could not be placed. Insufficient funds.\n");
         }
     }
 }

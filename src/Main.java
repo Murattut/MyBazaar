@@ -31,9 +31,8 @@ public class Main {
         for (String line : lines) {
             processCommand(line);
         }
-
+        Customers.Add_to_cart(7,21);
     }
-
     private static void processCommand(String line) throws ParseException {
         String[] parts = line.split(" "); // Split line by whitespace
 
@@ -53,37 +52,21 @@ public class Main {
                 String customer_date_of_birth = arguments.get(3);
                 Double customer_balance = Double.parseDouble(arguments.get(4));
                 String customer_password = arguments.get(5);
-                for(Admin admin : Admin.Admin_list){
-                    if(Objects.equals(admin.getName(), Admin_name)){
-                        admin.add_new_customar(Admin_name,customer_name, customer_email,
-                                customer_date_of_birth, customer_balance,customer_password);
-                    }
-                }
+                Admin.add_new_customar(Admin_name,customer_name,customer_email,
+                        customer_date_of_birth,customer_balance,customer_password);
                 break;
             case "SHOWCUSTOMER":
                 String Admin_name1 = arguments.get(0);
                 int CustomerId = Integer.parseInt(arguments.get(1));
-                for(Admin admin : Admin.Admin_list){
-                    if(Objects.equals(admin.getName(), Admin_name1)){
-                        admin.Show_Customer(Admin_name1,CustomerId);
-                    }
-                }
+                Admin.Show_Customer(Admin_name1,CustomerId);
                 break;
             case "SHOWCUSTOMERS":
                 String Admin_name2 = arguments.get(0);
-                for(Admin admin : Admin.Admin_list){
-                    if(Objects.equals(admin.getName(), Admin_name2)){
-                        admin.Show_Customers(Admin_name2);
-                    }
-                }
+                Admin.Show_Customers(Admin_name2);
                 break;
             case "SHOWADMININFO":
                 String Admin_name3 = arguments.get(0);
-                for(Admin admin : Admin.Admin_list){
-                    if(Objects.equals(admin.getName(), Admin_name3)){
-                        admin.Show_Admin_Info(Admin_name3);
-                    }
-                }
+                Admin.Show_Admin_Info(Admin_name3);
                 break;
             case "CREATECAMPAIGN":
                 String Admin_name4 = arguments.get(0);
@@ -91,12 +74,8 @@ public class Main {
                 String end_date = arguments.get(2);
                 String Item_type = arguments.get(3);
                 Integer rate = Integer.parseInt(arguments.get(4));
-                System.out.printf("\n you are hear 94\n");
-                for (Admin admin : Admin.Admin_list){
-                    if(Objects.equals(admin.getName(), Admin_name4)){
-                        admin.Create_campaign(Admin_name4,start_date,end_date,Item_type,rate);
-                    }
-                }
+                System.out.print("\n you are hear 77\n");
+                Admin.Create_campaign(Admin_name4,start_date,end_date,Item_type,rate);
                 break;
             case "ADDADMIN":
                 String Admin_name5 = arguments.get(0);
@@ -105,12 +84,8 @@ public class Main {
                 String admin_date_of_birth = arguments.get(3);
                 Double admin_salary = Double.parseDouble(arguments.get(4));
                 String admin_password = arguments.get(5);
-                for(Admin admin : Admin.Admin_list){
-                    if(Objects.equals(admin.getName(), Admin_name5)){
-                        admin.Add_Admin(Admin_name5,admin_name,admin_email,
-                                admin_date_of_birth,admin_salary,admin_password);
-                    }
-                }
+                Admin.Add_Admin(Admin_name5,admin_name,admin_email,
+                        admin_date_of_birth,admin_salary,admin_password);
                 break;
             case "ADDTECH":
                 String Admin_name6 = arguments.get(0);
@@ -119,12 +94,8 @@ public class Main {
                 String tech_date_of_birth = arguments.get(3);
                 Double tech_salary = Double.parseDouble(arguments.get(4));
                 Boolean tech_is_senior = Boolean.parseBoolean(arguments.get(5));
-                for(Admin admin : Admin.Admin_list){
-                    if(Objects.equals(admin.getName(), Admin_name6)){
-                        admin.Add_Tech(Admin_name6,tech_name,tech_email,
-                                tech_date_of_birth,tech_salary,tech_is_senior);
-                    }
-                }
+                Admin.Add_Tech(Admin_name6,tech_name,tech_email,
+                        tech_date_of_birth,tech_salary,tech_is_senior);
                 break;
             case "LISTITEM":
                 String Admin_tech_name = arguments.get(0);
@@ -187,12 +158,8 @@ public class Main {
                         weight = Double.parseDouble(arguments.get(7));
                         organic = Boolean.parseBoolean(arguments.get(5));
                         medicated = Boolean.parseBoolean(arguments.get(8));
-                        for(Technician technician : Technician.Technician_list){
-                            if(technician.getName().equals(Tech_name1)){
-                                technician.Add_item(Tech_name1,item_name,price,manufacturer,brand,
-                                        expiration_date,weight,organic,medicated);
-                            }
-                        }
+                        Technician.Add_item(Tech_name1,item_name,price,manufacturer,brand,
+                                expiration_date,weight,organic,medicated);
                     case("PERFUME"):
                         price = Double.parseDouble(arguments.get(2));
                         manufacturer = arguments.get(3);
@@ -201,12 +168,8 @@ public class Main {
                         weight = Double.parseDouble(arguments.get(7));
                         organic = Boolean.parseBoolean(arguments.get(5));
                         lasting_duration = Integer.parseInt(arguments.get(8));
-                        for (Technician technician : Technician.Technician_list){
-                            if(technician.getName().equals(Tech_name1)){
-                                technician.Add_item(Tech_name1,item_name,price,manufacturer,brand,
-                                        expiration_date,weight,organic,lasting_duration);
-                            }
-                        }
+                        Technician.Add_item(Tech_name1,item_name,price,manufacturer,brand,
+                                expiration_date,weight,organic,lasting_duration);
                     case("SKINCARE"):
                         price = Double.parseDouble(arguments.get(2));
                         manufacturer = arguments.get(3);
@@ -215,12 +178,8 @@ public class Main {
                         weight = Double.parseDouble(arguments.get(7));
                         organic = Boolean.parseBoolean(arguments.get(5));
                         baby_sensitive = Boolean.parseBoolean(arguments.get(8));
-                        for (Technician technician : Technician.Technician_list){
-                            if (technician.getName().equals(Tech_name1)){
-                                technician.Add_item(Tech_name1,item_name,price,manufacturer,brand,
-                                        expiration_date,weight,organic,baby_sensitive);
-                            }
-                        }
+                        Technician.Add_item(Tech_name1,item_name,price,manufacturer,brand,
+                                expiration_date,weight,organic,baby_sensitive);
                     case("DESKTOP"):
                         price = Double.parseDouble(arguments.get(2));
                         manufacturer = arguments.get(3);
@@ -232,13 +191,10 @@ public class Main {
                         RAM_Capacity = Integer.valueOf(arguments.get(9));
                         HDD_Capacity = Integer.valueOf(arguments.get(10));
                         box_color = arguments.get(11);
-                        for (Technician technician : Technician.Technician_list) {
-                            if (technician.getName().equals(Tech_name1)) {
-                                technician.Add_item(Tech_name1, item_name, price, manufacturer, brand,
-                                        maximum_allowed_input_voltage, maximum_power_consumption,
-                                        operating_system, CPU_Type, RAM_Capacity, HDD_Capacity, box_color);
-                            }
-                        }
+                        Technician.Add_item(Tech_name1,item_name,price,manufacturer,brand,
+                                maximum_allowed_input_voltage,maximum_power_consumption,
+                                operating_system,CPU_Type,RAM_Capacity,HDD_Capacity,box_color);
+
                     case("LAPTOP"):
                         price = Double.parseDouble(arguments.get(2));
                         manufacturer = arguments.get(3);
@@ -250,13 +206,9 @@ public class Main {
                         RAM_Capacity = Integer.valueOf(arguments.get(9));
                         HDD_Capacity = Integer.valueOf(arguments.get(10));
                         HDMI_support = Boolean.parseBoolean(arguments.get(11));
-                        for (Technician technician : Technician.Technician_list) {
-                            if (technician.getName().equals(Tech_name1)) {
-                                    technician.Add_item(Tech_name1, item_name, price, manufacturer, brand,
-                                            maximum_allowed_input_voltage, maximum_power_consumption,
-                                            operating_system, CPU_Type, RAM_Capacity, HDD_Capacity, HDMI_support);
-                            }
-                        }
+                        Technician.Add_item(Tech_name1,item_name,price,manufacturer,brand,
+                                maximum_allowed_input_voltage,maximum_power_consumption,
+                                operating_system,CPU_Type,RAM_Capacity,HDD_Capacity,HDMI_support);
                     case("TABLET"):
                         price = Double.parseDouble(arguments.get(2));
                         manufacturer = arguments.get(3);
@@ -268,16 +220,9 @@ public class Main {
                         RAM_Capacity = Integer.valueOf(arguments.get(9));
                         HDD_Capacity = Integer.valueOf(arguments.get(10));
                         Dimension = Integer.valueOf((arguments.get(11)));
-
-                        for (Technician technician : Technician.Technician_list) {
-                            if (technician.getName().equals(Tech_name1)) {
-                                technician.Add_item(Tech_name1, item_name, price, manufacturer, brand,
-                                        maximum_allowed_input_voltage, maximum_power_consumption,
-                                        operating_system, CPU_Type, RAM_Capacity, HDD_Capacity,
-                                        Dimension);
-                            }
-                        }
-
+                        Technician.Add_item(Tech_name1,item_name,price,manufacturer,brand,
+                                maximum_allowed_input_voltage,maximum_power_consumption,
+                                operating_system,CPU_Type,RAM_Capacity,HDD_Capacity,Dimension);
                     case("SMARTPHONE"):
                         price = Double.parseDouble(arguments.get(2));
                         manufacturer = arguments.get(3);
@@ -285,14 +230,8 @@ public class Main {
                         maximum_allowed_input_voltage = Double.parseDouble(arguments.get(5));
                         maximum_power_consumption = Double.parseDouble(arguments.get(6));
                         ScreanType = arguments.get(7);
-
-                        for (Technician technician : Technician.Technician_list) {
-                            if (technician.getName().equals(Tech_name1)) {
-                                technician.Add_item(Tech_name1, item_name, price, manufacturer, brand,
-                                        maximum_allowed_input_voltage, maximum_power_consumption,
-                                        ScreanType);
-                            }
-                        }
+                        Technician.Add_item(Tech_name1,item_name,price,manufacturer,brand,
+                                maximum_allowed_input_voltage,maximum_power_consumption,ScreanType);
                     case("TV"):
                         price = Double.parseDouble(arguments.get(2));
                         manufacturer = arguments.get(3);
@@ -300,15 +239,8 @@ public class Main {
                         maximum_allowed_input_voltage = Double.parseDouble(arguments.get(5));
                         maximum_power_consumption = Double.parseDouble(arguments.get(6));
                         ScreanSize = Integer.valueOf(arguments.get(7));
-
-                        for (Technician technician : Technician.Technician_list) {
-                            if (technician.getName().equals(Tech_name1)) {
-                                technician.Add_item(Tech_name1, item_name, price, manufacturer, brand,
-                                        maximum_allowed_input_voltage, maximum_power_consumption,
-                                        ScreanSize);
-                            }
-                        }
-
+                        Technician.Add_item(Tech_name1,item_name,price,manufacturer,brand,
+                                maximum_allowed_input_voltage,maximum_power_consumption,ScreanSize);
                     case("BOOK"):
                         price = Double.parseDouble(arguments.get(2));
                         realiseDate = (arguments.get(3));
@@ -318,13 +250,8 @@ public class Main {
                             Authors_name[i-6] = arguments.get(i);
                         }
                         page_number = Integer.valueOf(arguments.get(6));
-                        for (Technician technician : Technician.Technician_list) {
-                            if (technician.getName().equals(Tech_name1)) {
-                                technician.Add_item(Tech_name1, item_name, price, realiseDate, CoverTitle,
-                                        PuplisherName, Authors_name, page_number);
-                            }
-                        }
-
+                        Technician.Add_item(Tech_name1,item_name,price,realiseDate,CoverTitle,
+                                PuplisherName,Authors_name,page_number);
                     case("CDDVD"):
                         price = Double.parseDouble(arguments.get(2));
                         realiseDate = (arguments.get(3));
@@ -333,12 +260,8 @@ public class Main {
                         for (int i = 6; i < arguments.size(); i++) {
                             Song[i-6] = arguments.get(i);
                         }
-                        for (Technician technician : Technician.Technician_list) {
-                            if (technician.getName().equals(Tech_name1)) {
-                                technician.Add_item(Tech_name1, item_name, price, realiseDate, CoverTitle,
-                                        Composer_name, Song);
-                            }
-                        }
+                        Technician.Add_item(Tech_name1,item_name,price,realiseDate,CoverTitle,
+                                Composer_name,Song);
                 }
                 break; // Added case for ADDITEM
             case "SHOWORDERS":
@@ -349,54 +272,30 @@ public class Main {
                 Integer Customer_ID2 = Integer.valueOf(arguments.get(0));
                 String old_password = arguments.get(1);
                 String new_password = arguments.get(2);
-                for(Customers customer : Customers.customer_list){
-                    if (Objects.equals(customer.getCustomerId(), Customer_ID2)){
-                        customer.Ch_pass(Customer_ID2,old_password,new_password);
-                    }
-                }
+                Customers.Ch_pass(Customer_ID2,old_password,new_password);
                 break;
             case "DEPOSITMONEY":
                 Integer Customer_ID1 = Integer.valueOf(arguments.get(0));
                 Double amount = Double.valueOf(arguments.get(1));
-                for(Customers customer : Customers.customer_list){
-                    if (Objects.equals(customer.getCustomerId(), Customer_ID1)){
-                        customer.Deposit_money(Customer_ID1,amount);
-                    }
-                }
+                Customers.Deposit_money(Customer_ID1,amount);
                 break;
             case "SHOWCAMPAIGNS":
                 Integer Customer_ID = Integer.valueOf(arguments.get(0));
-                for(Customers customer : Customers.customer_list){
-                    if (Objects.equals(customer.getCustomerId(), Customer_ID)){
-                        customer.Show_champaigns(Customer_ID);
-                    }
-                }
+                Customers.Show_champaigns(Customer_ID);
                 break;
             case "ADDTOCART":
                 Integer customerId = Integer.parseInt(arguments.get(0));
                 Integer itemId = Integer.parseInt(arguments.get(1));
-                for(Customers customer : Customers.customer_list){
-                    if (Objects.equals(customer.getCustomerId(), customerId)){
-                        customer.Add_to_cart(customerId,itemId);
-                    }
-                }
+                Customers.Add_to_cart(customerId,itemId);
                 break;
             case "EMPTYCART":
                 Integer Customer_ID3 = Integer.valueOf(arguments.get(0));
-                for(Customers customer : Customers.customer_list){
-                    if (Objects.equals(customer.getCustomerId(), Customer_ID3)) {
-                        customer.Empty_cart(Customer_ID3);
-                    }
-                }
+                Customers.Empty_cart(Customer_ID3);
                 break;
             case "ORDER":
                 Integer customerId1 = Integer.parseInt(arguments.get(0));
                 String customer_password1 = arguments.get(1);
-                for(Customers customer : Customers.customer_list){
-                    if (Objects.equals(customer.getCustomerId(), customerId1)){
-                        customer.Order(customerId1,customer_password1);
-                    }
-                }
+                Customers.Order(customerId1,customer_password1);
                 break;
             default:
                 System.out.println("Unknown function: " + functionName);
