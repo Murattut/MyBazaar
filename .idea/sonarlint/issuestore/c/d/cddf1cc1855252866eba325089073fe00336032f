@@ -1,0 +1,13 @@
+
+‡
+java:S1319"jThe type of "item_list" should be an interface such as "List" rather than the implementation "LinkedList".(ŽÙ¤¦8©Ê®±È1
+r
+java:S1104"UMake item_list a static final constant or non-public and provide accessors if needed.(ŽÙ¤¦8©Ê®±È1
+L
+java:S1444"/Make this "public static item_list" field final(ŽÙ¤¦8©Ê®±È1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Üòý‰8©Ê®±È1
+i	java:S116"MRename this field "Id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×­ÒÒ8•³¯±È1
+q
+java:S3008"TRename this field "item_list" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŽÙ¤¦8ªÊ®±È1
+:
+java:S2386"Make this member "protected".(ŽÙ¤¦8«Ê®±È1

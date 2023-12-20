@@ -1,0 +1,16 @@
+
+h
+java:S1192"FDefine a constant instead of duplicating this literal "murat" 3 times.(ûÖÅŽúÿÿÿÿ8–Î¹±È1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢¥¨Úþÿÿÿÿ8–Î¹±È1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÖÅŽúÿÿÿÿ8–Î¹±È1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÈéÛ8–Î¹±È1
+7
+java:S1220""Move this file to a named package.8–Î¹±È1
+`
+java:S1854">Remove this useless assignment to local variable "test_array".(¢¥¨Úþÿÿÿÿ8˜Î¹±È1
+Q
+java:S1481"/Remove this unused "test_array" local variable.(¢¥¨Úþÿÿÿÿ8™Î¹±È1
+F	java:S106"+Replace this use of System.out by a logger.(¾Ü°@8šÎ¹±È1
+]	java:S125"<This block of commented-out lines of code should be removed.(Í“¿†ÿÿÿÿÿ8šÎ¹±È1
+]	java:S125("<This block of commented-out lines of code should be removed.(ù¡’Éÿÿÿÿÿ8šÎ¹±È1
+W	java:S1254"<This block of commented-out lines of code should be removed.(²î„O8šÎ¹±È1
