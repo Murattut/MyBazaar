@@ -1,7 +1,5 @@
 package Items_sub.Electronic_sub.Computer_sub;
-
 import Items_sub.Electronic_sub.Computer;
-
 import java.util.LinkedList;
 
 public class Desktop extends Computer {

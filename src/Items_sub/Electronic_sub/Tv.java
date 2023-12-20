@@ -1,7 +1,5 @@
 package Items_sub.Electronic_sub;
-
 import Items_sub.Electronic;
-
 import java.util.LinkedList;
 
 public class Tv extends Electronic {
@@ -26,7 +24,7 @@ public class Tv extends Electronic {
         this.screen_size = screen_size;
     }
     public void displayData() {
-        System.out.println("ID: " + getId());
+        System.out.println("\nID: " + getId());
         System.out.println("Price: " + getPrice());
         System.out.println("Stock: " + getStock());
         System.out.println("Manufacturer: " + getManufacturer());

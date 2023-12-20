@@ -1,6 +1,5 @@
 package Users;
 import Shopping_sub.Campaigns;
-
 import java.util.LinkedList;
 import java.util.Objects;
 
@@ -30,7 +29,6 @@ public class Admin extends Employee{
         boolean is_admin_true = true;
         for(Admin admin : Admin_list){
             if(Objects.equals(admin.getName(), admin_name)){
-                //System.out.print("admin accessed");
                 Customers new_customer = new Customers(customer_name,customer_email,date_of_birth,customer_password,
                         customer_balance);
                 Customers.customer_list.add(new_customer);
@@ -45,7 +43,6 @@ public class Admin extends Employee{
         boolean is_admin_true = true;
         for(Admin admin : Admin_list){
             if(Objects.equals(admin.getName(), admin_name)){
-                //System.out.print("admin accessed");
                 for (Customers customer : Customers.customer_list){
                     if(customer.getCustomerId() == CustomerId){
                         customer.displayPersonalData();
@@ -73,7 +70,6 @@ public class Admin extends Employee{
         boolean is_admin_true = true;
         for(Admin admin : Admin_list){
             if(Objects.equals(admin.getName(), admin_name)){
-                //System.out.print("admin accessed");
                 admin.displayPersonalData();
                 is_admin_true = false;
             }
@@ -81,12 +77,12 @@ public class Admin extends Employee{
             System.out.printf("No admin person named "+ admin_name +" exists!\n");
         }
     }
-    public void Creat_campaign(String admin_name,String start_date, String end_date, String item_type, Integer rate){
+    public void Create_campaign(String admin_name,String start_date, String end_date, String Item_type, Integer rate){
         boolean is_admin_true = true;
         for(Admin admin : Admin_list){
             if(Objects.equals(admin.getName(), admin_name)){
                 if(rate <=50){
-                    Campaigns campaign = new Campaigns(start_date,end_date,item_type,rate);
+                    Campaigns campaign = new Campaigns(start_date,end_date,Item_type,rate);
                     Campaigns.campaign_list.add(campaign);
                 }else{
                     System.out.print("Campaign was not created. Discount rate exceeds maximum rate of 50%.");
@@ -126,5 +122,4 @@ public class Admin extends Employee{
             System.out.printf("No admin person named "+ admin_name +" exists!\n");
         }
     }
-
 }

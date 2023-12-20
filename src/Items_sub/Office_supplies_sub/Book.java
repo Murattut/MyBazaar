@@ -1,7 +1,5 @@
 package Items_sub.Office_supplies_sub;
-
 import Items_sub.Office_supplies;
-
 import java.util.LinkedList;
 
 public class Book extends Office_supplies {
@@ -9,11 +7,11 @@ public class Book extends Office_supplies {
     private static int nextStock = 1;
     private Integer stock;
     private String publisher;
-    private String author;
+    private String[] author;
     private int pages;
 
     public Book(double price, String release_date, String cover_title,
-                String publisher,String author, int pages) {
+                String publisher,String[] author, int pages) {
         super(price, release_date, cover_title);
         this.stock = nextStock++;
         this.publisher = publisher;
@@ -29,11 +27,11 @@ public class Book extends Office_supplies {
         this.publisher = publisher;
     }
 
-    public String getAuthor() {
+    public String[] getAuthor() {
         return author;
     }
 
-    public void setAuthor(String author) {
+    public void setAuthor(String[] author) {
         this.author = author;
     }
 
@@ -45,7 +43,7 @@ public class Book extends Office_supplies {
         this.pages = pages;
     }
     public void displayData() {
-        System.out.println("ID: " + getId());
+        System.out.println("\n ID: " + getId());
         System.out.println("Price: " + getPrice());
         System.out.println("Stock: " + getStock());
         System.out.println("Release Date: " + getRelease_date());

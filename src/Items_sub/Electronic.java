@@ -1,12 +1,5 @@
 package Items_sub;
 
-
-import Items_sub.Electronic_sub.Computer;
-import Items_sub.Electronic_sub.Smart_phone;
-import Items_sub.Electronic_sub.Tv;
-
-import java.util.LinkedList;
-
 public class Electronic extends Items{
     private String manufacturer;
     private String brand;
@@ -57,13 +50,14 @@ public class Electronic extends Items{
     public void setMaximum_power_consumption(double maximum_power_consumption) {
         this.maximum_power_consumption = maximum_power_consumption;
     }
+    /*
     public void displayData() {
         System.out.println("Price: " + getPrice());
         System.out.println("Manufacturer: " + getManufacturer());
         System.out.println("Brand: " + getBrand());
         System.out.println("Maximum Allowed Input Voltage: " + getMaximum_allowed_input_voltage());
         System.out.println("Maximum Power Consumption: " + getMaximum_power_consumption());
-    }
+    }*/
 
     public Double getPrice() {
         return price;

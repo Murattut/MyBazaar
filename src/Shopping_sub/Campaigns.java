@@ -1,5 +1,4 @@
 package Shopping_sub;
-
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.LinkedList;
@@ -11,8 +10,8 @@ public class Campaigns {
     private String itemType;
     private Integer discount_rate;
     public Campaigns(String startDate, String endDate, String itemType, Integer discount_rate){
-        this.startDate = LocalDate.parse(startDate, DateTimeFormatter.ofPattern("dd-MM-yyyy"));
-        this.endDate = LocalDate.parse(endDate, DateTimeFormatter.ofPattern("dd-MM-yyyy"));
+        this.startDate = LocalDate.parse(startDate, DateTimeFormatter.ofPattern("dd.MM.yyyy"));
+        this.endDate = LocalDate.parse(endDate, DateTimeFormatter.ofPattern("dd.MM.yyyy"));
         this.itemType=itemType;
         this.discount_rate=discount_rate;
     }

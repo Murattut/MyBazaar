@@ -33,7 +33,6 @@ public class Employee extends Person{
         boolean is_admin_tech_true = true;
         for (Admin admin : Admin.Admin_list) {
             if (Objects.equals(admin.getName(), admin_Tech_name)) {
-                //System.out.print("admin accessed");
                 for(Hair_care hair_care: Hair_care.hair_CareLinkedList)
                     hair_care.displayData();
                 for(Perfume perfume: Perfume.perfumeLinkedList)
@@ -54,14 +53,11 @@ public class Employee extends Person{
                     book.displayData();
                 for(Cd_Dvd cdDv:Cd_Dvd.cd_dvdLinkedList)
                     cdDv.displayData();
-
-
                 is_admin_tech_true = false;
                 break;
             }
         for(Technician tech : Technician.Technician_list){
             if (Objects.equals(tech.getName(), admin_Tech_name)) {
-                //System.out.print("admin accessed");
                 for(Hair_care hair_care: Hair_care.hair_CareLinkedList)
                     hair_care.displayData();
                 for(Perfume perfume: Perfume.perfumeLinkedList)
@@ -82,7 +78,6 @@ public class Employee extends Person{
                     book.displayData();
                 for(Cd_Dvd cdDv:Cd_Dvd.cd_dvdLinkedList)
                     cdDv.displayData();
-
                 is_admin_tech_true = false;
                 break;
             }
@@ -95,9 +90,7 @@ public class Employee extends Person{
         boolean is_admin_tech_true = true;
         for (Admin admin : Admin.Admin_list) {
             if (Objects.equals(admin.getName(), admin_Tech_name)) {
-                //System.out.print("admin accessed");
                 for (String temp_name : Array_name) {
-                    System.out.printf("\n");
                     switch (temp_name) {
                         case "HAIRCARE":
                             for (Hair_care hair_care : Hair_care.hair_CareLinkedList)
@@ -150,7 +143,7 @@ public class Employee extends Person{
                             break;
 
                         default:
-                            System.out.print("some thing go wrong");
+                            System.out.print("something go wrong");
                             break;
 
                     }
@@ -158,78 +151,75 @@ public class Employee extends Person{
                 }
             }is_admin_tech_true = false;
         }
-            for(Technician tech : Technician.Technician_list){
-                if (Objects.equals(tech.getName(), admin_Tech_name)) {
-                    //System.out.print("admin accessed");
-                    for(String temp_name: Array_name){
-                        System.out.printf("\n");
-                        switch (temp_name) {
-                            case "HairCare":
-                                for (Hair_care hair_care : Hair_care.hair_CareLinkedList)
-                                    hair_care.displayData();
-                                break;
+        for (Technician tech : Technician.Technician_list) {
+            if (Objects.equals(tech.getName(), admin_Tech_name)) {
+                for (String temp_name : Array_name) {
+                    switch (temp_name) {
+                        case "HairCare":
+                            for (Hair_care hair_care : Hair_care.hair_CareLinkedList)
+                                hair_care.displayData();
+                            break;
 
-                            case "Perfume":
-                                for (Perfume perfume : Perfume.perfumeLinkedList)
-                                    perfume.displayData();
-                                break;
+                        case "Perfume":
+                            for (Perfume perfume : Perfume.perfumeLinkedList)
+                                perfume.displayData();
+                            break;
 
-                            case "SkinCare":
-                                for (Skin_care skinCare : Skin_care.skin_careLinkedList)
-                                    skinCare.displayData();
-                                break;
+                        case "SkinCare":
+                            for (Skin_care skinCare : Skin_care.skin_careLinkedList)
+                                skinCare.displayData();
+                            break;
 
-                            case "Desktop":
-                                for (Desktop desktop : Desktop.desktopLinkedList)
-                                    desktop.displayData();
-                                break;
+                        case "Desktop":
+                            for (Desktop desktop : Desktop.desktopLinkedList)
+                                desktop.displayData();
+                            break;
 
-                            case "Laptop":
-                                for (Laptop laptop : Laptop.laptopLinkedList)
-                                    laptop.displayData();
-                                break;
+                        case "Laptop":
+                            for (Laptop laptop : Laptop.laptopLinkedList)
+                                laptop.displayData();
+                            break;
 
-                            case "Tablet":
-                                for (Tablet tablet : Tablet.tabletLinkedList)
-                                    tablet.displayData();
-                                break;
+                        case "Tablet":
+                            for (Tablet tablet : Tablet.tabletLinkedList)
+                                tablet.displayData();
+                            break;
 
-                            case "SmartPhone":
-                                for (Smart_phone smartPhone : Smart_phone.smart_phoneLinkedList)
-                                    smartPhone.displayData();
-                                break;
+                        case "SmartPhone":
+                            for (Smart_phone smartPhone : Smart_phone.smart_phoneLinkedList)
+                                smartPhone.displayData();
+                            break;
 
-                            case "Tv":
-                                for (Tv tv : Tv.TvLinkedList)
-                                    tv.displayData();
-                                break;
+                        case "Tv":
+                            for (Tv tv : Tv.TvLinkedList)
+                                tv.displayData();
+                            break;
 
-                            case "Book":
-                                for (Book book : Book.bookLinkedList)
-                                    book.displayData();
-                                break;
+                        case "Book":
+                            for (Book book : Book.bookLinkedList)
+                                book.displayData();
+                            break;
 
-                            case "CdDvd":
-                                for (Cd_Dvd cdDv : Cd_Dvd.cd_dvdLinkedList)
-                                    cdDv.displayData();
-                                break;
+                        case "CdDvd":
+                            for (Cd_Dvd cdDv : Cd_Dvd.cd_dvdLinkedList)
+                                cdDv.displayData();
+                            break;
 
-                            default:
-                                System.out.print("some thing go wrong");
-                                break;
-
-                        }
+                        default:
+                            System.out.print("some thing go wrong");
+                            break;
                     }
                 }
-            }if(is_admin_tech_true) {
-                System.out.printf("No admin person named " + admin_Tech_name + " exists!\n");
             }
         }
+        if (is_admin_tech_true) {
+            System.out.printf("No admin person named " + admin_Tech_name + " exists!\n");
+        }
+    }
     public static void Show_item_low_on_stock(String admin_Tech_name,Integer stock) {
         boolean is_admin_tech_true = true;
         for (Admin admin : Admin.Admin_list) {
             if (Objects.equals(admin.getName(), admin_Tech_name)) {
-                //System.out.print("admin accessed");
                 for(Hair_care hair_care: Hair_care.hair_CareLinkedList)
                     if(hair_care.getStock() <=stock)
                         System.out.printf("hair cair: "+ hair_care.getStock());
@@ -305,11 +295,10 @@ public class Employee extends Person{
         }
     }
     public static void Show_item_low_on_stock(String admin_Tech_name) {
-        Integer stock = 10000; //sistem 10000 den fazla stocku yok sayacak
+        Integer stock = 100000; //System ignore bigger then 100.000 stock for ram safety
         boolean is_admin_tech_true = true;
         for (Admin admin : Admin.Admin_list) {
             if (Objects.equals(admin.getName(), admin_Tech_name)) {
-                //System.out.print("admin accessed");
                 for(Hair_care hair_care: Hair_care.hair_CareLinkedList)
                     if(hair_care.getStock() <=stock)
                         System.out.printf("hair cair: "+ hair_care.getStock());
@@ -388,7 +377,6 @@ public class Employee extends Person{
         boolean is_admin_tech_true = true;
         for (Admin admin : Admin.Admin_list) {
             if (Objects.equals(admin.getName(), admin_Tech_name)) {
-                //System.out.print("admin accessed");
                 for (Customers customer: Customers.customer_list)
                     if(Objects.equals(customer.getStatus(), "GOLDEN"))
                         customer.displayPersonalData();
@@ -397,12 +385,9 @@ public class Employee extends Person{
             }
             for(Technician tech : Technician.Technician_list){
                 if (Objects.equals(tech.getName(), admin_Tech_name)) {
-                    //System.out.print("admin accessed");
                     for (Customers customer: Customers.customer_list)
                         if(Objects.equals(customer.getStatus(), "GOLDEN"))
                             customer.displayPersonalData();
-
-
                     is_admin_tech_true = false;
                     break;
                 }

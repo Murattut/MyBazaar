@@ -1,8 +1,6 @@
 package Users;
-
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.LinkedList;
 
 public class Person {
     private String name;
@@ -12,7 +10,7 @@ public class Person {
     public Person(String name, String email, String date_of_birth){
         this.name =name;
         this.email = email;
-        this.date_of_birth = LocalDate.parse(date_of_birth, DateTimeFormatter.ofPattern("dd-MM-yyyy"));
+        this.date_of_birth = LocalDate.parse(date_of_birth, DateTimeFormatter.ofPattern("dd.MM.yyyy"));
     }
 
     public void setName(String name) {
@@ -38,9 +36,10 @@ public class Person {
     public LocalDate getDate_of_birth() {
         return date_of_birth;
     }
+    /*
     public void displayPersonalData() {
         System.out.println("Name: " + name);
         System.out.println("Email: " + email);
         System.out.println("Date of Birth: " + date_of_birth);
-    }
+    }*/
 }

@@ -15,7 +15,7 @@ public class Cosmetic extends Items{
         super(price);
         this.manufacturer = manufacturer;
         this.brand = brand;
-        this.expiration_date = LocalDate.parse(expiration_date, DateTimeFormatter.ofPattern("dd-MM-yyyy"));
+        this.expiration_date = LocalDate.parse(expiration_date, DateTimeFormatter.ofPattern("dd.MM.yyyy"));
         this.weight = weight;
         this.organic = organic;
         this.price = price;
@@ -60,6 +60,7 @@ public class Cosmetic extends Items{
     public void setOrganic(boolean organic) {
         this.organic = organic;
     }
+    /*
     public void displayData() {
         System.out.println("Price: " + getPrice());
         System.out.println("Manufacturer: " + getManufacturer());
@@ -67,7 +68,7 @@ public class Cosmetic extends Items{
         System.out.println("Expiration Date: " + getExpiration_date());
         System.out.println("Weight: " + getWeight());
         System.out.println("Organic: " + isOrganic());
-    }
+    }*/
 
     public Double getPrice() {
         return price;

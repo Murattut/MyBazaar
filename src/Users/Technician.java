@@ -1,5 +1,4 @@
 package Users;
-
 import Items_sub.Cosmetic_sub.Hair_care;
 import Items_sub.Cosmetic_sub.Perfume;
 import Items_sub.Cosmetic_sub.Skin_care;
@@ -11,7 +10,6 @@ import Items_sub.Electronic_sub.Tv;
 import Items_sub.Office_supplies_sub.Book;
 import Items_sub.Office_supplies_sub.Cd_Dvd;
 import Shopping_sub.Orders;
-
 import java.util.LinkedList;
 import java.util.Objects;
 
@@ -114,12 +112,12 @@ public class Technician extends Employee{
                                 Double price, String manufacturer, String brand,
                                 Double maximum_allowed_input_voltage, Double maximum_power_consumption,
                                 String operating_system, String CPU_Type, Integer RAM_Capacity, Integer HDD_Capacity,
-                                Double weight,Double height, Double lenght) {
+                                Integer Dimension) {
         for (Technician tech : Technician.Technician_list) {
             if (Objects.equals(tech.getName(), tech_name)) {
                 if (Item_name.equals("TABLET")) {
                     Tablet tablet = new Tablet(price, manufacturer, brand, maximum_allowed_input_voltage, maximum_power_consumption,
-                            operating_system, CPU_Type, RAM_Capacity, HDD_Capacity,weight,height,lenght);
+                            operating_system, CPU_Type, RAM_Capacity, HDD_Capacity, Dimension);
                     Tablet.tabletLinkedList.add(tablet);
                 } else {
                     System.out.print("somethings go wrong");
@@ -161,7 +159,7 @@ public class Technician extends Employee{
     }
     public static void Add_item(String tech_name, String Item_name,
                                 double price, String release_date, String cover_title,
-                                String publisher,String author, int pages) {
+                                String publisher,String[] author, int pages) {
         for (Technician tech : Technician.Technician_list) {
             if (Objects.equals(tech.getName(), tech_name)) {
                 if (Item_name.equals("BOOK")) {
@@ -176,7 +174,7 @@ public class Technician extends Employee{
     }
     public static void Add_item(String tech_name, String Item_name,
                                 Double price, String cover_title, String release_date,
-                                String composer,String song) {
+                                String composer,String[] song) {
         for (Technician tech : Technician.Technician_list) {
             if (Objects.equals(tech.getName(), tech_name)) {
                 if (Item_name.equals("CDDVD")) {

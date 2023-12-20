@@ -1,13 +1,5 @@
 package Items_sub.Electronic_sub;
-
-import Items_sub.Cosmetic;
 import Items_sub.Electronic;
-import Items_sub.Electronic_sub.Computer_sub.Desktop;
-import Items_sub.Electronic_sub.Computer_sub.Laptop;
-import Items_sub.Electronic_sub.Computer_sub.Tablet;
-import Items_sub.Office_supplies;
-
-import java.util.LinkedList;
 
 public class Computer extends Electronic {
     private String operating_system;
@@ -24,7 +16,6 @@ public class Computer extends Electronic {
         this.RAM_Capacity = RAM_Capacity;
         this.HDD_Capacity = HDD_Capacity;
     }
-
     public String getOperating_system() {
         return operating_system;
     }
@@ -56,7 +47,9 @@ public class Computer extends Electronic {
     public void setHDD_Capacity(int HDD_Capacity) {
         this.HDD_Capacity = HDD_Capacity;
     }
-    public void displayData() {
+
+    //This fucnton is used to display the data of the computer but it is not used in the program
+    /*public void displayData() {
         System.out.println("Price: " + getPrice());
         System.out.println("Manufacturer: " + getManufacturer());
         System.out.println("Brand: " + getBrand());
@@ -66,5 +59,5 @@ public class Computer extends Electronic {
         System.out.println("CPU_Type: "+ getCPU_Type());
         System.out.println("RAM_Capacity: "+ getRAM_Capacity());
         System.out.println("HDD_Capacity: " + getHDD_Capacity());
-    }
+    }*/
 }

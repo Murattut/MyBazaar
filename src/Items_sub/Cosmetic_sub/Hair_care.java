@@ -1,7 +1,5 @@
 package Items_sub.Cosmetic_sub;
-
 import Items_sub.Cosmetic;
-
 import java.util.LinkedList;
 
 public class Hair_care extends Cosmetic {

@@ -1,8 +1,4 @@
 package Items_sub;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.LinkedList;
-
 public class Office_supplies extends Items{
     private String release_date;
     private String cover_title;
@@ -30,11 +26,12 @@ public class Office_supplies extends Items{
     public void setCover_title(String cover_title) {
         this.cover_title = cover_title;
     }
+    /*
     public void displayData() {
         System.out.println("Price: " + getPrice());
         System.out.println("Release Date: " + getRelease_date());
         System.out.println("Cover Title: " + getCover_title());
-    }
+    }*/
 
     public Double getPrice() {
         return price;

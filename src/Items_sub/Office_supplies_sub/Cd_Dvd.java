@@ -1,7 +1,5 @@
 package Items_sub.Office_supplies_sub;
-
 import Items_sub.Office_supplies;
-
 import java.util.LinkedList;
 
 public class Cd_Dvd extends Office_supplies {
@@ -9,10 +7,10 @@ public class Cd_Dvd extends Office_supplies {
     private static int nextStock = 1;
     private Integer stock;
     private String composer;
-    private String song;
+    private String[] song;
 
     public Cd_Dvd(double price, String release_date, String cover_title,
-                  String composer,String song) {
+                  String composer,String[] song) {
         super(price, release_date, cover_title);
         this.stock = nextStock++;
         this.composer = composer;
@@ -27,15 +25,15 @@ public class Cd_Dvd extends Office_supplies {
         this.composer = composer;
     }
 
-    public String getSong() {
+    public String[] getSong() {
         return song;
     }
 
-    public void setSong(String song) {
+    public void setSong(String[] song) {
         this.song = song;
     }
     public void displayData() {
-        System.out.println("ID: " + getId());
+        System.out.println("\n ID: " + getId());
         System.out.println("Price: " + getPrice());
         System.out.println("Stock: " + getStock());
         System.out.println("Release Date: " + getRelease_date());
