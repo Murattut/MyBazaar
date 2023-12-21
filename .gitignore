@@ -30,3 +30,5 @@ bin/
 
 ### General ###
 .idea
+ignore/old_commands_test.txt
+ignore/Old_users.txt
