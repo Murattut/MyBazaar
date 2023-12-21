@@ -6,7 +6,6 @@ public class Perfume extends Cosmetic {
     public static LinkedList<Perfume> perfumeLinkedList = new LinkedList<>();
     private static int nextStock = 1;
     private Integer stock;
-
     private int lasting_duration;
     public Perfume(double price, String manufacturer, String brand,
                      String expiration_date, double weight, boolean organic,
@@ -34,7 +33,6 @@ public class Perfume extends Cosmetic {
         System.out.println("Organic: " + isOrganic());
         System.out.println("Lasting_duration: " + getLasting_duration());
     }
-
     public Integer getStock() {
         return stock;
     }

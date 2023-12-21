@@ -2,27 +2,23 @@ package Users;
 import Shopping_sub.Campaigns;
 import java.util.LinkedList;
 import java.util.Objects;
-
 public class Admin extends Employee{
     public static LinkedList<Admin> Admin_list = new LinkedList<>();
     private String password;
-
     public Admin(String name, String email, String date_of_birth, Double salary, String password) {
         super(name, email, date_of_birth, salary);
         this.password =password;
     }
-
     public String getPassword() {
         return password;
     }
-
     public void setPassword(String password) {
         this.password = password;
     }
     public void displayPersonalData() {
-        System.out.println("\nName: " + getName());
-        System.out.println("Email: " + getEmail());
-        System.out.println("Date of Birth: " + getDate_of_birth());
+        System.out.println("\nAdmin Name: " + getName());
+        System.out.println("Admin Email: " + getEmail());
+        System.out.println("Admin Date of Birth: " + getDate_of_birth());
     }
     public static void add_new_customar(String admin_name, String customer_name, String customer_email,
                                  String date_of_birth, Double customer_balance,String customer_password){
@@ -85,7 +81,7 @@ public class Admin extends Employee{
                     Campaigns campaign = new Campaigns(start_date,end_date,Item_type,rate);
                     Campaigns.campaign_list.add(campaign);
                 }else{
-                    System.out.print("Campaign was not created. Discount rate exceeds maximum rate of 50%.");
+                    System.out.print("Campaign was not created. Discount rate exceeds maximum rate of 50%.\n");
                 }
             }is_admin_true = false;
         }if(is_admin_true){

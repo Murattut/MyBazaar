@@ -12,20 +12,16 @@ import Items_sub.Office_supplies_sub.Cd_Dvd;
 import Shopping_sub.Orders;
 import java.util.LinkedList;
 import java.util.Objects;
-
 public class Technician extends Employee{
     public static LinkedList<Technician> Technician_list = new LinkedList<>();
     private Boolean Is_senior;
-
     public Technician(String name, String email, String date_of_birth, Double salary, Boolean Is_senior) {
         super(name, email, date_of_birth, salary);
         this.Is_senior = Is_senior;
     }
-
     public Boolean isIs_senior() {
         return Is_senior;
     }
-
     public void setIs_senior(Boolean is_senior) {
         Is_senior = is_senior;
     }

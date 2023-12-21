@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 public class Cosmetic extends Items{
     private String manufacturer;
     private String brand;
-    private LocalDate expiration_date;
+    private String expiration_date;
     private double weight;
     private boolean organic;
     private Double price;
@@ -15,7 +15,7 @@ public class Cosmetic extends Items{
         super(price);
         this.manufacturer = manufacturer;
         this.brand = brand;
-        this.expiration_date = LocalDate.parse(expiration_date, DateTimeFormatter.ofPattern("dd.MM.yyyy"));
+        this.expiration_date = expiration_date;
         this.weight = weight;
         this.organic = organic;
         this.price = price;
@@ -37,11 +37,11 @@ public class Cosmetic extends Items{
         this.brand = brand;
     }
 
-    public LocalDate getExpiration_date() {
+    public String getExpiration_date() {
         return expiration_date;
     }
 
-    public void setExpiration_date(LocalDate expiration_date) {
+    public void setExpiration_date(String expiration_date) {
         this.expiration_date = expiration_date;
     }
 
