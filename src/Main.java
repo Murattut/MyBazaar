@@ -12,15 +12,26 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException, ParseException {
-        // Create a CEO for control everything
-        //
+    public static Admin System_admin(){
+        // Create a System for control everything and add it to system
         Admin System_admin = new Admin("System", "System@...",
                 "01.01.1999", 100000.0, "test1234");
+        Admin.Admin_list.add(System_admin);
+        return System_admin;
+    }
+    public static Technician System_tech(){
+        // Create a System for control everything and add it to system
         Technician System_tech = new Technician("System", "System@...",
                 "01.01.1999", 100000.0, true);
-        Admin.Admin_list.add(System_admin);
         Technician.Technician_list.add(System_tech);
+        return System_tech;
+    }
+
+    public static void main(String[] args) throws IOException, ParseException {
+        // Create a System for control everything and add it to system
+        Admin System_admin = System_admin();
+        Technician System_tech = System_tech();
+
 
         // read users from file and add them to system
         String filename_users = "src/users.txt";
@@ -329,7 +340,7 @@ public class Main {
         return lines;
     }
 
-    public static void readUsers(String filename, Admin ceo) throws FileNotFoundException {
+    public static void readUsers(String filename, Admin system_admin) throws FileNotFoundException {
         File userFile = new File(filename);
         Scanner scanner = new Scanner(userFile);
 
@@ -357,7 +368,7 @@ public class Main {
                     birthDate = userInfo[3];
                     salary = Double.parseDouble(userInfo[4]);
                     password = userInfo[5];
-                    ceo.Add_Admin(ceo.getName(), name, email, birthDate, salary, password);
+                    system_admin.Add_Admin(system_admin.getName(), name, email, birthDate, salary, password);
                     break;
                 case "TECH":
                     name = userInfo[1];
@@ -365,7 +376,7 @@ public class Main {
                     birthDate = userInfo[3];
                     salary = Double.parseDouble(userInfo[4]);
                     isSenior = Boolean.parseBoolean(userInfo[5]);
-                    ceo.Add_Tech(ceo.getName(), name, email, birthDate, salary, isSenior);
+                    system_admin.Add_Tech(system_admin.getName(), name, email, birthDate, salary, isSenior);
                     break;
                 case "CUSTOMER":
                     name = userInfo[1];
@@ -373,7 +384,7 @@ public class Main {
                     birthDate = userInfo[3];
                     balance = Double.parseDouble(userInfo[4]);
                     password = userInfo[5];
-                    ceo.add_new_customar(ceo.getName(), name, email, birthDate, balance, password);
+                    system_admin.add_new_customar(system_admin.getName(), name, email, birthDate, balance, password);
                     break;
                 default:
                     System.out.println("Invalid user type: " + userType);
@@ -384,7 +395,7 @@ public class Main {
         scanner.close();
     }
 
-    public static void readItems(String filename, Admin ceo) throws FileNotFoundException {
+    public static void readItems(String filename, Admin system_admin) throws FileNotFoundException {
         File userFile = new File(filename);
         Scanner scanner = new Scanner(userFile);
         while (scanner.hasNextLine()) {
@@ -395,7 +406,7 @@ public class Main {
             String[] arguments = new String[12];
             String[] temp = line.split("\t");
             System.arraycopy(temp, 0, arguments, 1, temp.length);
-            arguments[0] = ceo.getName();
+            arguments[0] = system_admin.getName();
             String Tech_name1 = arguments[0];
             String item_name = arguments[1];
             double price;

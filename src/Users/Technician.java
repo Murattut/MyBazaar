@@ -256,17 +256,16 @@ public class Technician extends Employee{
                 if(tech.isIs_senior()){
                     is_senior_true = false;
                     for(Orders order : Orders.order_list){
-                        System.out.println("Order Date: " + order.getOrderDate());
-                        System.out.println("Total Cost: " + order.getTotalCost());
-                        System.out.println("Purchased Items: " + order.getPurchased_items());
+                        order.DisplayOrder();
                     }
                 }
             }
         }if (is_tech_true) {
-            System.out.printf("No technician person named " + Tech_name + " exists!\n");
+            System.out.println("No technician person named " + Tech_name + " exists!\n");
+            is_senior_true = false;
         }
         if (is_senior_true) {
-            System.out.printf("is not authorized to display orders!\n");
+            System.out.println("is not authorized to display orders!\n");
         }
     }
 }

@@ -4,20 +4,21 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.LinkedList;
 
-public class Orders extends Customers{
+public class Orders{
 
     public static LinkedList<Orders> order_list = new LinkedList<>();
     private LocalDate orderDate;
     private Double totalCost;
-    private String[] purchased_items;
+    private LinkedList<Object> purchased_items;
+
+    private int customerId;
     //customerId
 
-    public Orders(String name, String email, String date_of_birth, String password, Double balance,Double totalCost,
-                  String[] purchased_items) {
-        super(name, email, date_of_birth, password, balance);
-        this.orderDate = LocalDate.parse(date_of_birth, DateTimeFormatter.ofPattern("dd-MM-yyyy"));
+    public Orders(Double totalCost, LinkedList<Object> purchased_items, int customerId) {
+        this.orderDate = LocalDate.now();
         this.totalCost = totalCost;
         this.purchased_items = purchased_items;
+        this.customerId = customerId;
     }
 
     public LocalDate getOrderDate() {
@@ -36,11 +37,29 @@ public class Orders extends Customers{
         this.totalCost = totalCost;
     }
 
-    public String[] getPurchased_items() {
+    public LinkedList<Object> getPurchased_items() {
         return purchased_items;
     }
 
-    public void setPurchased_items(String[] purchased_items) {
+    public void setPurchased_items(LinkedList<Object> purchased_items) {
         this.purchased_items = purchased_items;
+    }
+    public int getCustomerId() {
+        for (Customers customer : Customers.customer_list) {
+            if (customer.getCustomerId() == customerId) {
+                return customerId;
+            }
+        }return -1;
+    }
+
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
+    }
+
+    public void DisplayOrder(){
+        System.out.println("\nOrder Date: " + orderDate);
+        System.out.println("Total Cost: " + totalCost);
+        System.out.println("Purchased Items: ");
+        System.out.println("Customer ID: " + getCustomerId());
     }
 }

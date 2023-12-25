@@ -18,13 +18,12 @@ import java.util.*;
 public class Customers extends Person{
     public static LinkedList<Customers> customer_list = new LinkedList<>();
     //private static LinkedList<Items> shopping_cart= new LinkedList<>();
-    public Stack<Object> Temp_stack = new Stack<>();
+    public LinkedList<Object> shopping_cart = new LinkedList<>();
     private static Integer nextCustomerId = 1;
     private Integer customerId;
     private String password;
     private Double balance;
     private String status;
-    private Integer[] shopping_cart;
     private LinkedList<Orders> order_history;
     public Customers(String name, String email, String date_of_birth, String password,
                      Double balance) {
@@ -33,8 +32,6 @@ public class Customers extends Person{
         this.password = password;
         this.balance = balance;
         this.status = "CLASSIC";
-        this.shopping_cart = null;
-        this.order_history = Orders.order_list;
     }
     public Integer getCustomerId() {
         return customerId;
@@ -66,10 +63,10 @@ public class Customers extends Person{
     public void setOrder_history(LinkedList<Orders> order_history) {
         this.order_history = order_history;
     }
-    public Integer[] getShopping_cart() {
+    public LinkedList<Object> getShopping_cart() {
         return shopping_cart;
     }
-    public void setShopping_cart(Integer[] shopping_cart) {
+    public void setShopping_cart(LinkedList<Object> shopping_cart) {
         this.shopping_cart = shopping_cart;
     }
     public void displayPersonalData() {
@@ -139,7 +136,7 @@ public class Customers extends Person{
             if (customer.getCustomerId().equals(CustomerId)) {
                 is_customer_true = false;
                 Add_to_cart_sub_function(Item_ID, CustomerId);
-                if(!customer.Temp_stack.isEmpty()) {
+                if(!customer.shopping_cart.isEmpty()) {
                     System.out.println("Item added to cart successfully");
                     break;
                 }
@@ -164,7 +161,7 @@ public class Customers extends Person{
             for(Customers customer : customer_list) {
                 if (customer.getCustomerId().equals(CustomerId)) {
                     if (Objects.equals(Temp.getId(), Item_Id)) {
-                        customer.Temp_stack.push(Temp);
+                        customer.shopping_cart.add(Temp);
                         Hair_care.hair_CareLinkedList.remove(Temp);
                         break;
                     }
@@ -175,7 +172,7 @@ public class Customers extends Person{
             for (Customers customer : customer_list) {
                 if (customer.getCustomerId().equals(CustomerId)) {
                     if (Objects.equals(Temp.getId(), Item_Id)) {
-                        customer.Temp_stack.push(Temp);
+                        customer.shopping_cart.add(Temp);
                         Perfume.perfumeLinkedList.remove(Temp);
                         break;
                     }
@@ -186,7 +183,7 @@ public class Customers extends Person{
             for (Customers customer : customer_list) {
                 if (customer.getCustomerId().equals(CustomerId)) {
                     if (Objects.equals(Temp.getId(), Item_Id)) {
-                        customer.Temp_stack.push(Temp);
+                        customer.shopping_cart.add(Temp);
                         Skin_care.skin_careLinkedList.remove(Temp);
                         break;
                     }
@@ -197,7 +194,7 @@ public class Customers extends Person{
             for (Customers customer : customer_list) {
                 if (customer.getCustomerId().equals(CustomerId)) {
                     if (Objects.equals(Temp.getId(), Item_Id)) {
-                        customer.Temp_stack.push(Temp);
+                        customer.shopping_cart.add(Temp);
                         Desktop.desktopLinkedList.remove(Temp);
                         break;
                     }
@@ -208,7 +205,7 @@ public class Customers extends Person{
             for (Customers customer : customer_list) {
                 if (customer.getCustomerId().equals(CustomerId)) {
                     if (Objects.equals(Temp.getId(), Item_Id)) {
-                        customer.Temp_stack.push(Temp);
+                        customer.shopping_cart.add(Temp);
                         Laptop.laptopLinkedList.remove(Temp);
                         break;
                     }
@@ -219,7 +216,7 @@ public class Customers extends Person{
             for (Customers customer : customer_list) {
                 if (customer.getCustomerId().equals(CustomerId)) {
                     if (Objects.equals(Temp.getId(), Item_Id)) {
-                        customer.Temp_stack.push(Temp);
+                        customer.shopping_cart.add(Temp);
                         Tablet.tabletLinkedList.remove(Temp);
                         break;
                     }
@@ -230,7 +227,7 @@ public class Customers extends Person{
             for (Customers customer : customer_list) {
                 if (customer.getCustomerId().equals(CustomerId)) {
                     if (Objects.equals(Temp.getId(), Item_Id)) {
-                        customer.Temp_stack.push(Temp);
+                        customer.shopping_cart.add(Temp);
                         Smart_phone.smart_phoneLinkedList.remove(Temp);
                         break;
                     }
@@ -241,7 +238,7 @@ public class Customers extends Person{
             for (Customers customer : customer_list) {
                 if (customer.getCustomerId().equals(CustomerId)) {
                     if (Objects.equals(Temp.getId(), Item_Id)) {
-                        customer.Temp_stack.push(Temp);
+                        customer.shopping_cart.add(Temp);
                         Tv.TvLinkedList.remove(Temp);
                         break;
                     }
@@ -252,7 +249,7 @@ public class Customers extends Person{
             for (Customers customer : customer_list) {
                 if (customer.getCustomerId().equals(CustomerId)) {
                     if (Objects.equals(Temp.getId(), Item_Id)) {
-                        customer.Temp_stack.push(Temp);
+                        customer.shopping_cart.add(Temp);
                         Book.bookLinkedList.remove(Temp);
                         break;
                     }
@@ -263,7 +260,7 @@ public class Customers extends Person{
             for (Customers customer : customer_list) {
                 if (customer.getCustomerId().equals(CustomerId)) {
                     if (Objects.equals(Temp.getId(), Item_Id)) {
-                        customer.Temp_stack.push(Temp);
+                        customer.shopping_cart.add(Temp);
                         Cd_Dvd.cd_dvdLinkedList.remove(Temp);
                         break;
                     }
@@ -275,10 +272,51 @@ public class Customers extends Person{
         boolean is_customer_true = true;
         for (Customers customer : customer_list) {
             if (customer.getCustomerId().equals(CustomerId)) {
+                List<Object> itemsToRemove = new ArrayList<>();
                 is_customer_true = false;
-                customer.Temp_stack.removeAllElements();
-                System.out.println("The cart has been emptied.\n");
-                break;
+                while (!customer.shopping_cart.isEmpty()) {
+                    for(Object item : customer.shopping_cart){
+                        if(item instanceof Hair_care){
+                            Hair_care.hair_CareLinkedList.add((Hair_care) item);
+                            itemsToRemove.add(item);
+                            customer.shopping_cart.remove(item);
+                        }if (item instanceof Perfume){
+                            Perfume.perfumeLinkedList.add((Perfume) item);
+                            itemsToRemove.add(item);
+                        }if (item instanceof Skin_care){
+                            Skin_care.skin_careLinkedList.add((Skin_care) item);
+                            itemsToRemove.add(item);
+                        }if (item instanceof Desktop){
+                            Desktop.desktopLinkedList.add((Desktop) item);
+                            itemsToRemove.add(item);
+                        }if (item instanceof Laptop){
+                            Laptop.laptopLinkedList.add((Laptop) item);
+                            itemsToRemove.add(item);
+                        }if (item instanceof Tablet){
+                            Tablet.tabletLinkedList.add((Tablet) item);
+                            itemsToRemove.add(item);
+                        }if (item instanceof Smart_phone){
+                            Smart_phone.smart_phoneLinkedList.add((Smart_phone) item);
+                            itemsToRemove.add(item);
+                        }if (item instanceof Tv){
+                            Tv.TvLinkedList.add((Tv) item);
+                            itemsToRemove.add(item);
+                        }if (item instanceof Book){
+                            Book.bookLinkedList.add((Book) item);
+                            itemsToRemove.add(item);
+                        }if (item instanceof Cd_Dvd){
+                            Cd_Dvd.cd_dvdLinkedList.add((Cd_Dvd) item);
+                            itemsToRemove.add(item);
+                        }
+                    }customer.shopping_cart.removeAll(itemsToRemove);
+                }
+                //customer.Temp_stack.removeAllElements();
+                if(customer.shopping_cart.isEmpty()){
+                    System.out.println("The cart has been emptied.\n");
+                    break;
+                }else {
+                    System.out.println("The cart could not be emptied.\n");
+                }
             }
         }if (is_customer_true){
             System.out.printf("No customer with ID number "+ CustomerId +" exists!\n");
@@ -294,13 +332,13 @@ public class Customers extends Person{
                 is_customer_true = false;
                 if(customer.getPassword().equals(Customer_Password)){
                     is_password_true = false;
-                   if(!customer.Temp_stack.isEmpty()) {
+                   if(!customer.shopping_cart.isEmpty()) {
                           is_cart_empty = false;
                        double total_price = 0;
                        switch (customer.getStatus()) {
                            case "CLASSIC" -> {
-                               for (int i = 0; i < customer.Temp_stack.size(); i++) {
-                                   total_price = total_price + ((Items) customer.Temp_stack.get(i)).getPrice();
+                               for (int i = 0; i < customer.shopping_cart.size(); i++) {
+                                   total_price = total_price + ((Items) customer.shopping_cart.get(i)).getPrice();
                                }if(total_price >= 1000 && total_price < 5000 && customer.getBalance() >= total_price){
                                    customer.setStatus("SILVER");
                                }if (total_price >= 5000 && customer.getBalance() >= total_price){
@@ -308,26 +346,29 @@ public class Customers extends Person{
                                }if (customer.getBalance() >= total_price) {
                                    is_balance_enough = false;
                                    customer.setBalance(customer.getBalance() - total_price);
+                                   Orders.order_list.add(new Orders(total_price, customer.shopping_cart, CustomerId));
                                    System.out.println("\nOrder placed successfully\n");
                                }
                            }
                            case "SILVER" -> {
-                               for (int i = 0; i < customer.Temp_stack.size(); i++){
-                                   total_price = total_price + ((Items) customer.Temp_stack.get(i)).getPrice();
+                               for (int i = 0; i < customer.shopping_cart.size(); i++){
+                                   total_price = total_price + ((Items) customer.shopping_cart.get(i)).getPrice();
                                }if (total_price >= 5000 && customer.getBalance() >= total_price){
                                    customer.setStatus("GOLDEN");
                                }if(customer.getBalance() >= total_price*10/100) {
                                    is_balance_enough = false;
                                    customer.setBalance(customer.getBalance() - total_price);
+                                   Orders.order_list.add(new Orders(total_price, customer.shopping_cart, CustomerId));
                                    System.out.println("\nOrder placed successfully\n");
                                }
                            }
                            case "GOLDEN" -> {
-                               for (int i = 0; i < customer.Temp_stack.size(); i++){
-                                   total_price = total_price + ((Items) customer.Temp_stack.get(i)).getPrice();
+                               for (int i = 0; i < customer.shopping_cart.size(); i++){
+                                   total_price = total_price + ((Items) customer.shopping_cart.get(i)).getPrice();
                                }if(customer.getBalance() >= total_price*15/100) {
                                    is_balance_enough = false;
                                    customer.setBalance(customer.getBalance() - total_price);
+                                   Orders.order_list.add(new Orders(total_price, customer.shopping_cart, CustomerId));
                                    System.out.println("\nOrder placed successfully\n");
                                }
                            }

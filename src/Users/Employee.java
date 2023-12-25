@@ -226,7 +226,7 @@ public class Employee extends Person {
                 if (Book.bookLinkedList.size() <= stock)
                     System.out.printf("\nBook:" + Book.bookLinkedList.size());
                 if (Cd_Dvd.cd_dvdLinkedList.size() <= stock)
-                    System.out.printf("\nCdDv:" + Cd_Dvd.cd_dvdLinkedList.size());
+                    System.out.printf("\nCdDv:" + Cd_Dvd.cd_dvdLinkedList.size()+"\n");
 
                 is_admin_tech_true = false;
                 break;
@@ -254,7 +254,7 @@ public class Employee extends Person {
                 if (Book.bookLinkedList.size() <= stock)
                     System.out.printf("\nBook:" + Book.bookLinkedList.size());
                 if (Cd_Dvd.cd_dvdLinkedList.size() <= stock)
-                    System.out.printf("\nCdDv:" + Cd_Dvd.cd_dvdLinkedList.size());
+                    System.out.printf("\nCdDv:" + Cd_Dvd.cd_dvdLinkedList.size()+"\n");
                 is_admin_tech_true = false;
                 break;
             }
@@ -288,7 +288,7 @@ public class Employee extends Person {
                 if (Book.bookLinkedList.size() <= stock)
                     System.out.printf("\nBook:" + Book.bookLinkedList.size());
                 if (Cd_Dvd.cd_dvdLinkedList.size() <= stock)
-                    System.out.printf("\nCdDv:" + Cd_Dvd.cd_dvdLinkedList.size());
+                    System.out.printf("\nCdDv:" + Cd_Dvd.cd_dvdLinkedList.size()+"\n");
                 is_admin_tech_true = false;
                 break;
             }
@@ -325,7 +325,7 @@ public class Employee extends Person {
                         System.out.printf("book:" + book.getStock());
                 for (Cd_Dvd cdDv : Cd_Dvd.cd_dvdLinkedList)
                     if (cdDv.getStock() <= stock)
-                        System.out.printf("cdDv:" + cdDv.getStock());
+                        System.out.printf("cdDv:" + cdDv.getStock()+"\n");
                 is_admin_tech_true = false;
                 break;
             }
