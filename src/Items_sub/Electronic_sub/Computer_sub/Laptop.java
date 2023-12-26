@@ -6,7 +6,6 @@ public class Laptop extends Computer {
     public static LinkedList<Laptop> laptopLinkedList = new LinkedList<>();
     private static int nextStock = 1;
     private Integer stock;
-
     private Boolean HDMI_support;
     public Laptop(double price, String manufacturer, String brand,
                    double maximum_allowed_input_voltage, double maximum_power_consumption,
@@ -37,7 +36,7 @@ public class Laptop extends Computer {
         System.out.println("CPU_Type: "+ getCPU_Type());
         System.out.println("RAM_Capacity: "+ getRAM_Capacity());
         System.out.println("HDD_Capacity: " + getHDD_Capacity());
-        System.out.println(" HDMI Support: "+ getHDMI_support());
+        System.out.println("HDMI Support: "+ getHDMI_support());
     }
 
     public Integer getStock() {

@@ -1,12 +1,13 @@
 package Items_sub.Cosmetic_sub;
 import Items_sub.Cosmetic;
+
 import java.util.LinkedList;
 
 public class Hair_care extends Cosmetic {
     public static LinkedList<Hair_care> hair_CareLinkedList = new LinkedList<>();
-    private static int nextStock = 1;
+    private static Integer nextStock = 1;
     private Integer stock;
-    private boolean medicated;
+    private Boolean medicated;
 
     public Hair_care(double price, String manufacturer, String brand,
                      String expiration_date, double weight, boolean organic,

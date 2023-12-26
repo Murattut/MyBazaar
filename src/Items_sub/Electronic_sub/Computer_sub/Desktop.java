@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 public class Desktop extends Computer {
     public static LinkedList<Desktop> desktopLinkedList = new LinkedList<>();
-    private static int nextStock = 1;
+    private static Integer nextStock = 1;
     private Integer stock;
     private String box_color;
 

@@ -4,9 +4,9 @@ import java.util.LinkedList;
 
 public class Skin_care extends Cosmetic {
     public static LinkedList<Skin_care> skin_careLinkedList = new LinkedList<>();
-    private static int nextStock = 1;
+    private static Integer nextStock = 1;
     private Integer stock;
-    private boolean baby_sensitive;
+    private Boolean baby_sensitive;
     public Skin_care(double price, String manufacturer, String brand,
                      String expiration_date, double weight, boolean organic,
                      boolean baby_sensitive) {

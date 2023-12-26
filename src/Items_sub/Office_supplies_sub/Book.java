@@ -1,13 +1,17 @@
 package Items_sub.Office_supplies_sub;
 import Items_sub.Office_supplies;
+import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.Objects;
+import java.util.stream.Collectors;
+
 public class Book extends Office_supplies {
     public static LinkedList<Book> bookLinkedList = new LinkedList<>();
     private static int nextStock = 1;
     private Integer stock;
     private String publisher;
     private String[] author;
-    private int pages;
+    private Integer pages;
     public Book(double price, String release_date, String cover_title,
                 String publisher,String[] author, int pages) {
         super(price, release_date, cover_title);
@@ -35,13 +39,14 @@ public class Book extends Office_supplies {
         this.pages = pages;
     }
     public void displayData() {
-        System.out.println("\n ID: " + getId());
+        System.out.println("\nID: " + getId());
         System.out.println("Price: " + getPrice());
         System.out.println("Stock: " + getStock());
         System.out.println("Release Date: " + getRelease_date());
         System.out.println("Cover Title: " + getCover_title());
-        System.out.println("Publiseher: " + getPublisher());
-        System.out.println("Author: " + getAuthor());
+        System.out.println("Publisher: " + getPublisher());
+        System.out.println("Author: " + Arrays.stream(getAuthor()).filter(Objects::nonNull)
+                        .collect(Collectors.joining(", ", "[", "]")));
         System.out.println("Pages: " + getPages());
     }
     public Integer getStock() {

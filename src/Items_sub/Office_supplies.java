@@ -26,12 +26,6 @@ public class Office_supplies extends Items{
     public void setCover_title(String cover_title) {
         this.cover_title = cover_title;
     }
-    /*
-    public void displayData() {
-        System.out.println("Price: " + getPrice());
-        System.out.println("Release Date: " + getRelease_date());
-        System.out.println("Cover Title: " + getCover_title());
-    }*/
 
     public Double getPrice() {
         return price;

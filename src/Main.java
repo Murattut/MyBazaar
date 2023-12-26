@@ -1,14 +1,16 @@
+import Shopping_sub.Orders;
 import Users.Admin;
 import Users.Customers;
 import Users.Employee;
 import Users.Technician;
 
 import java.io.*;
-import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+
+import java.io.IOException;
 
 public class Main {
 
@@ -25,33 +27,42 @@ public class Main {
                 "01.01.1999", 100000.0, true);
         Technician.Technician_list.add(System_tech);
         return System_tech;
-    }
+    }// Redirect standard output to a file
 
-    public static void main(String[] args) throws IOException, ParseException {
+
+    public static void main(String[] args) throws IOException {
         // Create a System for control everything and add it to system
         Admin System_admin = System_admin();
         Technician System_tech = System_tech();
 
+        // this part of the code is for redirecting output to a file
+        // if you want print output to console comment this part
+        // if not comment the next part
+        //PrintStream out = new PrintStream(new FileOutputStream("src/Text_files/output.txt"));
+        //System.setOut(out);
 
         // read users from file and add them to system
-        String filename_users = "src/users.txt";
+        String filename_users = "src/Text_files/users.txt";
         readUsers(filename_users, System_admin);
-        ///System.out.print("user readed 1 \n\n\n");
+        ///System.out.print("user read 1 \n\n\n");
 
         // read items from file and add them to system
-        String filename_items = "src/items.txt";
+        String filename_items = "src/Text_files/items.txt";
         readItems(filename_items, System_admin);
         ///System.out.print("item leaded \n\n\n");
 
         //read commands from file and process them
-        String filename_Commands = "src/commands.txt";
+        String filename_Commands = "src/Text_files/commands.txt";
         List<String> lines = readLinesFromFile(filename_Commands);
         for (String line : lines) {
             processCommand(line);
         }
+        //this code is for redirecting output to a file
+        // if you want print output to console comment this part
+        //out.close();
+        System_tech.Show_order(System_tech.getName());
     }
-
-    private static void processCommand(String line) throws ParseException {
+    private static void processCommand(String line){
         String[] parts = line.split("[\t:]"); // Split by tabs or colons
         //String[] parts = line.split("\t"); // Split line by whitespace
 
@@ -368,7 +379,7 @@ public class Main {
                     birthDate = userInfo[3];
                     salary = Double.parseDouble(userInfo[4]);
                     password = userInfo[5];
-                    system_admin.Add_Admin(system_admin.getName(), name, email, birthDate, salary, password);
+                    Admin.Add_Admin(system_admin.getName(), name, email, birthDate, salary, password);
                     break;
                 case "TECH":
                     name = userInfo[1];
@@ -376,7 +387,7 @@ public class Main {
                     birthDate = userInfo[3];
                     salary = Double.parseDouble(userInfo[4]);
                     isSenior = Boolean.parseBoolean(userInfo[5]);
-                    system_admin.Add_Tech(system_admin.getName(), name, email, birthDate, salary, isSenior);
+                    Admin.Add_Tech(system_admin.getName(), name, email, birthDate, salary, isSenior);
                     break;
                 case "CUSTOMER":
                     name = userInfo[1];
@@ -384,7 +395,7 @@ public class Main {
                     birthDate = userInfo[3];
                     balance = Double.parseDouble(userInfo[4]);
                     password = userInfo[5];
-                    system_admin.add_new_customar(system_admin.getName(), name, email, birthDate, balance, password);
+                    Admin.add_new_customar(system_admin.getName(), name, email, birthDate, balance, password);
                     break;
                 default:
                     System.out.println("Invalid user type: " + userType);
@@ -435,7 +446,6 @@ public class Main {
             String[] Authors_name = new String[100]; // I don't know how many authors will be
             // but ı think a book can't have more than 100 authors
             int page_number;
-            String Composer_name;
             String[] Song = new String[1000]; // I don't know how many songs will be
             // but ı think a CD/DVD can't more than have 1000 songs
             switch (item_name) {

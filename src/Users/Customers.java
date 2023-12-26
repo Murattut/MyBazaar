@@ -17,7 +17,6 @@ import java.util.*;
 
 public class Customers extends Person{
     public static LinkedList<Customers> customer_list = new LinkedList<>();
-    //private static LinkedList<Items> shopping_cart= new LinkedList<>();
     public LinkedList<Object> shopping_cart = new LinkedList<>();
     private static Integer nextCustomerId = 1;
     private Integer customerId;
@@ -310,7 +309,6 @@ public class Customers extends Person{
                         }
                     }customer.shopping_cart.removeAll(itemsToRemove);
                 }
-                //customer.Temp_stack.removeAllElements();
                 if(customer.shopping_cart.isEmpty()){
                     System.out.println("The cart has been emptied.\n");
                     break;
@@ -346,7 +344,7 @@ public class Customers extends Person{
                                }if (customer.getBalance() >= total_price) {
                                    is_balance_enough = false;
                                    customer.setBalance(customer.getBalance() - total_price);
-                                   Orders.order_list.add(new Orders(total_price, customer.shopping_cart, CustomerId));
+                                   Orders.order_list.add(new Orders(total_price, customer.shopping_cart.size(), CustomerId));
                                    customer.shopping_cart.removeAll(customer.shopping_cart);
                                    System.out.println("\nOrder placed successfully\n");
                                }
@@ -359,7 +357,7 @@ public class Customers extends Person{
                                }if(customer.getBalance() >= total_price*10/100) {
                                    is_balance_enough = false;
                                    customer.setBalance(customer.getBalance() - total_price);
-                                   Orders.order_list.add(new Orders(total_price, customer.shopping_cart, CustomerId));
+                                   Orders.order_list.add(new Orders(total_price, customer.shopping_cart.size(), CustomerId));
                                    customer.shopping_cart.removeAll(customer.shopping_cart);
                                    System.out.println("\nOrder placed successfully\n");
                                }
@@ -370,7 +368,7 @@ public class Customers extends Person{
                                }if(customer.getBalance() >= total_price*15/100) {
                                    is_balance_enough = false;
                                    customer.setBalance(customer.getBalance() - total_price);
-                                   Orders.order_list.add(new Orders(total_price, customer.shopping_cart, CustomerId));
+                                   Orders.order_list.add(new Orders(total_price, customer.shopping_cart.size(), CustomerId));
                                    customer.shopping_cart.removeAll(customer.shopping_cart);
                                    System.out.println("\nOrder placed successfully\n");
                                }

@@ -4,9 +4,9 @@ import java.util.LinkedList;
 
 public class Perfume extends Cosmetic {
     public static LinkedList<Perfume> perfumeLinkedList = new LinkedList<>();
-    private static int nextStock = 1;
+    private static Integer nextStock = 1;
     private Integer stock;
-    private int lasting_duration;
+    private Integer lasting_duration;
     public Perfume(double price, String manufacturer, String brand,
                      String expiration_date, double weight, boolean organic,
                    int lasting_duration) {

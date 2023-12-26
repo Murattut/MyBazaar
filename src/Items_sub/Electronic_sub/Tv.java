@@ -3,9 +3,9 @@ import Items_sub.Electronic;
 import java.util.LinkedList;
 public class Tv extends Electronic {
     public static LinkedList<Tv> TvLinkedList = new LinkedList<>();
-    private static int nextStock = 1;
+    private static Integer nextStock = 1;
     private Integer stock;
-    private int screen_size;
+    private Integer screen_size;
     public Tv(double price, String manufacturer, String brand,
               double maximum_allowed_input_voltage, double maximum_power_consumption,
               int screen_size) {

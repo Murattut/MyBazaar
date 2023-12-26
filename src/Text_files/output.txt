@@ -1,0 +1,2341 @@
+
+Customer Name: Hamza
+Id: 3
+E-mail: hamza@hacettepe.edu
+Date of Birth: 08-09-1987
+Status: CLASSIC
+
+Customer Name: Emre
+Id: 1
+E-mail: emre@hacettepe.edu
+Date of Birth: 02-10-2000
+Status: CLASSIC
+
+Customer Name: Meltem
+Id: 2
+E-mail: meltem@hacettepe.edu
+Date of Birth: 30-03-1990
+Status: CLASSIC
+
+Customer Name: Hamza
+Id: 3
+E-mail: hamza@hacettepe.edu
+Date of Birth: 08-09-1987
+Status: CLASSIC
+
+Customer Name: Taha
+Id: 4
+E-mail: taha@hacettepe.edu
+Date of Birth: 29-04-1969
+Status: CLASSIC
+
+Customer Name: Furkan
+Id: 5
+E-mail: furkan@hacettepe.edu
+Date of Birth: 30-09-1974
+Status: CLASSIC
+
+Customer Name: Kerem
+Id: 6
+E-mail: kerem@yahoo.com
+Date of Birth: 21-02-1993
+Status: CLASSIC
+No admin person named Ferit exists!
+No admin person named Musa exists!
+No customer with ID number 7 exists!
+No customer with ID number 7 exists!
+
+Customer Name: Taha
+Id: 4
+E-mail: taha@hacettepe.edu
+Date of Birth: 29-04-1969
+Status: CLASSIC
+
+Admin Name: Can
+Admin Email: can@hacettepe.edu
+Admin Date of Birth: 21-05-1980
+No admin person named Enes exists!
+Campaign was not created. Discount rate exceeds maximum rate of 50%.
+25 sales of BOOK until 2017-06-01
+20 sales of PERFUME until 2017-09-01
+Item added to cart successfully
+Item added to cart successfully
+Item added to cart successfully
+Item added to cart successfully
+
+Order placed successfully
+
+Deposit completed successfully
+
+Password changed successfully
+
+The cart has been emptied.
+
+You should add some items to your cart before order request!
+Item added to cart successfully
+Item added to cart successfully
+Order could not be placed. Invalid password.
+Order could not be placed. Invalid password.
+Order could not be placed. Insufficient funds.
+is not authorized to display orders!
+
+
+Haircare: 2
+Perfume: 3
+SkinCare: 3
+Desktop: 3
+Laptop: 5
+Tablet: 2
+SmartPhone: 3
+Tv: 3
+Book:2
+CdDv:4
+Unknown function: SHOWADMINONEO
+Item added to cart successfully
+Item added to cart successfully
+
+Order placed successfully
+
+is not authorized to display orders!
+
+
+Customer Name: Emre
+Id: 1
+E-mail: emre@hacettepe.edu
+Date of Birth: 02-10-2000
+Status: CLASSIC
+
+Customer Name: Meltem
+Id: 2
+E-mail: meltem@hacettepe.edu
+Date of Birth: 30-03-1990
+Status: CLASSIC
+
+Customer Name: Hamza
+Id: 3
+E-mail: hamza@hacettepe.edu
+Date of Birth: 08-09-1987
+Status: SILVER
+
+Customer Name: Taha
+Id: 4
+E-mail: taha@hacettepe.edu
+Date of Birth: 29-04-1969
+Status: CLASSIC
+
+Customer Name: Furkan
+Id: 5
+E-mail: furkan@hacettepe.edu
+Date of Birth: 30-09-1974
+Status: CLASSIC
+
+Customer Name: Kerem
+Id: 6
+E-mail: kerem@yahoo.com
+Date of Birth: 21-02-1993
+Status: GOLDEN
+
+ID: 29
+Price: 22.0
+Stock: 1
+Manufacturer: Henkel AG & Company
+Brand: SCHWARZKOPF
+Expiration Date: 2019
+Weight: 0.0
+Organic: false
+Medicated: false
+
+ID: 30
+Price: 26.0
+Stock: 2
+Manufacturer: Goldwell Manufacturing Services
+Brand: GOLDWELL
+Expiration Date: 2021
+Weight: 1.0
+Organic: false
+Medicated: false
+
+ID: 31
+Price: 13.0
+Stock: 1
+Manufacturer: Calvin Klein Inc.
+Brand: CALVIN KLEIN
+Expiration Date: 2025
+Weight: 250.0
+Organic: false
+Lasting_duration: 75
+
+ID: 32
+Price: 17.0
+Stock: 2
+Manufacturer: Hugo Boss Group
+Brand: HUGO BOSS
+Expiration Date: 2021
+Weight: 330.0
+Organic: false
+Lasting_duration: 110
+
+ID: 33
+Price: 11.0
+Stock: 3
+Manufacturer: Calvin Klein Inc.
+Brand: CALVIN KLEIN
+Expiration Date: 2019
+Weight: 500.0
+Organic: false
+Lasting_duration: 30
+
+ID: 34
+Price: 19.0
+Stock: 1
+Manufacturer: Beiersdorf Global AG.
+Brand: NIVEA
+Expiration Date: 2017
+Weight: 1.0
+Organic: false
+Baby sensitive: false
+
+ID: 35
+Price: 13.0
+Stock: 2
+Manufacturer: Clinique Laboratories
+Brand: CLINIQUE
+Expiration Date: 2025
+Weight: 1.0
+Organic: false
+Baby sensitive: false
+
+ID: 36
+Price: 9.0
+Stock: 3
+Manufacturer: Beiersdorf Global AG.
+Brand: NIVEA
+Expiration Date: 2022
+Weight: 0.0
+Organic: false
+Baby sensitive: false
+
+ID: 12
+Price: 1430.0
+Stock: 2
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 1000
+Box Color: white
+
+ID: 13
+Price: 1000.0
+Stock: 3
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Free-Dos
+CPU_Type: Intel Core i3
+RAM_Capacity: 8
+HDD_Capacity: 500
+Box Color: red
+
+ID: 14
+Price: 2100.0
+Stock: 4
+Manufacturer: Dell Inc.
+Brand: DELL
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 2000
+Box Color: black
+
+ID: 16
+Price: 3100.0
+Stock: 1
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 750
+ HDMI Support: false
+
+ID: 17
+Price: 3400.0
+Stock: 2
+Manufacturer: Apple Inc.
+Brand: APPLE
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: MAC OS
+CPU_Type: Intel Core i5
+RAM_Capacity: 8
+HDD_Capacity: 1000
+ HDMI Support: false
+
+ID: 18
+Price: 1800.0
+Stock: 3
+Manufacturer: Hewlett-Packard Company
+Brand: HP
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Free-Dos
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 300
+ HDMI Support: false
+
+ID: 19
+Price: 1700.0
+Stock: 4
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i3
+RAM_Capacity: 8
+HDD_Capacity: 500
+ HDMI Support: false
+
+ID: 20
+Price: 2050.0
+Stock: 5
+Manufacturer: Dell Inc.
+Brand: DELL
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Free-Dos
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 400
+ HDMI Support: false
+
+ID: 21
+Price: 90.0
+Stock: 1
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 100.0
+Operating_system: Android 4.4 (KitKat)
+CPU_Type: Qualcomm Quad-core
+RAM_Capacity: 1
+HDD_Capacity: 8
+Dimensions: 9
+
+ID: 22
+Price: 135.0
+Stock: 2
+Manufacturer: Samsung Electronics
+Brand: SAMSUNG
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 100.0
+Operating_system: Android 5.0.2 (Lollipop)
+CPU_Type: Samsung Exynos
+RAM_Capacity: 3
+HDD_Capacity: 32
+Dimensions: 11
+
+ID: 26
+Price: 700.0
+Stock: 1
+Manufacturer: Samsung Electronics
+Brand: SAMSUNG
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen type: Quad HD Super AMOLED
+
+ID: 27
+Price: 600.0
+Stock: 2
+Manufacturer: Sony Electronics Manufacturing
+Brand: SONY
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen type: Super AMOLED
+
+ID: 28
+Price: 1100.0
+Stock: 3
+Manufacturer: Apple Inc.
+Brand: APPLE
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen type: IPS LCD
+
+ID: 23
+Price: 900.0
+Stock: 1
+Manufacturer: Royal Philips Electronics of the Netherlands
+Brand: PHILIPS
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen Size: 43
+
+ID: 24
+Price: 1500.0
+Stock: 2
+Manufacturer: Samsung Electronics
+Brand: SAMSUNG
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen Size: 40
+
+ ID: 1
+Price: 2.0
+Stock: 1
+Release Date: 2016
+Cover Title: Everything We Keep
+Publiseher: Lake Union
+Author: [Ljava.lang.String;@5e9f23b4
+Pages: 306
+
+ ID: 4
+Price: 4.0
+Stock: 4
+Release Date: 1960
+Cover Title: To Kill a Mockingbird
+Publiseher: J. B.Lippincott & Co.
+Author: [Ljava.lang.String;@4783da3f
+Pages: 281
+
+ ID: 6
+Price: 10.0
+Stock: 1
+Release Date: Live North America
+Cover Title: 2016
+Composer: Gary Clark Jr.
+Song: [Ljava.lang.String;@378fd1ac
+
+ ID: 7
+Price: 5.0
+Stock: 2
+Release Date: One of the Boys
+Cover Title: 2008
+Composer: Katy Perry
+Song: [Ljava.lang.String;@49097b5d
+
+ ID: 8
+Price: 13.0
+Stock: 3
+Release Date: Red
+Cover Title: 2012
+Composer: Taylor Swift
+Song: [Ljava.lang.String;@6e2c634b
+
+ ID: 9
+Price: 21.0
+Stock: 4
+Release Date: Kind of Blue
+Cover Title: 1959
+Composer: Miles Davis
+Song: [Ljava.lang.String;@37a71e93
+
+ID: 29
+Price: 22.0
+Stock: 1
+Manufacturer: Henkel AG & Company
+Brand: SCHWARZKOPF
+Expiration Date: 2019
+Weight: 0.0
+Organic: false
+Medicated: false
+
+ID: 30
+Price: 26.0
+Stock: 2
+Manufacturer: Goldwell Manufacturing Services
+Brand: GOLDWELL
+Expiration Date: 2021
+Weight: 1.0
+Organic: false
+Medicated: false
+
+ID: 31
+Price: 13.0
+Stock: 1
+Manufacturer: Calvin Klein Inc.
+Brand: CALVIN KLEIN
+Expiration Date: 2025
+Weight: 250.0
+Organic: false
+Lasting_duration: 75
+
+ID: 32
+Price: 17.0
+Stock: 2
+Manufacturer: Hugo Boss Group
+Brand: HUGO BOSS
+Expiration Date: 2021
+Weight: 330.0
+Organic: false
+Lasting_duration: 110
+
+ID: 33
+Price: 11.0
+Stock: 3
+Manufacturer: Calvin Klein Inc.
+Brand: CALVIN KLEIN
+Expiration Date: 2019
+Weight: 500.0
+Organic: false
+Lasting_duration: 30
+
+ID: 34
+Price: 19.0
+Stock: 1
+Manufacturer: Beiersdorf Global AG.
+Brand: NIVEA
+Expiration Date: 2017
+Weight: 1.0
+Organic: false
+Baby sensitive: false
+
+ID: 35
+Price: 13.0
+Stock: 2
+Manufacturer: Clinique Laboratories
+Brand: CLINIQUE
+Expiration Date: 2025
+Weight: 1.0
+Organic: false
+Baby sensitive: false
+
+ID: 36
+Price: 9.0
+Stock: 3
+Manufacturer: Beiersdorf Global AG.
+Brand: NIVEA
+Expiration Date: 2022
+Weight: 0.0
+Organic: false
+Baby sensitive: false
+
+ID: 12
+Price: 1430.0
+Stock: 2
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 1000
+Box Color: white
+
+ID: 13
+Price: 1000.0
+Stock: 3
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Free-Dos
+CPU_Type: Intel Core i3
+RAM_Capacity: 8
+HDD_Capacity: 500
+Box Color: red
+
+ID: 14
+Price: 2100.0
+Stock: 4
+Manufacturer: Dell Inc.
+Brand: DELL
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 2000
+Box Color: black
+
+ID: 16
+Price: 3100.0
+Stock: 1
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 750
+ HDMI Support: false
+
+ID: 17
+Price: 3400.0
+Stock: 2
+Manufacturer: Apple Inc.
+Brand: APPLE
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: MAC OS
+CPU_Type: Intel Core i5
+RAM_Capacity: 8
+HDD_Capacity: 1000
+ HDMI Support: false
+
+ID: 18
+Price: 1800.0
+Stock: 3
+Manufacturer: Hewlett-Packard Company
+Brand: HP
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Free-Dos
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 300
+ HDMI Support: false
+
+ID: 19
+Price: 1700.0
+Stock: 4
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i3
+RAM_Capacity: 8
+HDD_Capacity: 500
+ HDMI Support: false
+
+ID: 20
+Price: 2050.0
+Stock: 5
+Manufacturer: Dell Inc.
+Brand: DELL
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Free-Dos
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 400
+ HDMI Support: false
+
+ID: 21
+Price: 90.0
+Stock: 1
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 100.0
+Operating_system: Android 4.4 (KitKat)
+CPU_Type: Qualcomm Quad-core
+RAM_Capacity: 1
+HDD_Capacity: 8
+Dimensions: 9
+
+ID: 22
+Price: 135.0
+Stock: 2
+Manufacturer: Samsung Electronics
+Brand: SAMSUNG
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 100.0
+Operating_system: Android 5.0.2 (Lollipop)
+CPU_Type: Samsung Exynos
+RAM_Capacity: 3
+HDD_Capacity: 32
+Dimensions: 11
+
+ID: 26
+Price: 700.0
+Stock: 1
+Manufacturer: Samsung Electronics
+Brand: SAMSUNG
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen type: Quad HD Super AMOLED
+
+ID: 27
+Price: 600.0
+Stock: 2
+Manufacturer: Sony Electronics Manufacturing
+Brand: SONY
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen type: Super AMOLED
+
+ID: 28
+Price: 1100.0
+Stock: 3
+Manufacturer: Apple Inc.
+Brand: APPLE
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen type: IPS LCD
+
+ID: 23
+Price: 900.0
+Stock: 1
+Manufacturer: Royal Philips Electronics of the Netherlands
+Brand: PHILIPS
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen Size: 43
+
+ID: 24
+Price: 1500.0
+Stock: 2
+Manufacturer: Samsung Electronics
+Brand: SAMSUNG
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen Size: 40
+
+ ID: 1
+Price: 2.0
+Stock: 1
+Release Date: 2016
+Cover Title: Everything We Keep
+Publiseher: Lake Union
+Author: [Ljava.lang.String;@5e9f23b4
+Pages: 306
+
+ ID: 4
+Price: 4.0
+Stock: 4
+Release Date: 1960
+Cover Title: To Kill a Mockingbird
+Publiseher: J. B.Lippincott & Co.
+Author: [Ljava.lang.String;@4783da3f
+Pages: 281
+
+ ID: 6
+Price: 10.0
+Stock: 1
+Release Date: Live North America
+Cover Title: 2016
+Composer: Gary Clark Jr.
+Song: [Ljava.lang.String;@378fd1ac
+
+ ID: 7
+Price: 5.0
+Stock: 2
+Release Date: One of the Boys
+Cover Title: 2008
+Composer: Katy Perry
+Song: [Ljava.lang.String;@49097b5d
+
+ ID: 8
+Price: 13.0
+Stock: 3
+Release Date: Red
+Cover Title: 2012
+Composer: Taylor Swift
+Song: [Ljava.lang.String;@6e2c634b
+
+ ID: 9
+Price: 21.0
+Stock: 4
+Release Date: Kind of Blue
+Cover Title: 1959
+Composer: Miles Davis
+Song: [Ljava.lang.String;@37a71e93
+
+ID: 29
+Price: 22.0
+Stock: 1
+Manufacturer: Henkel AG & Company
+Brand: SCHWARZKOPF
+Expiration Date: 2019
+Weight: 0.0
+Organic: false
+Medicated: false
+
+ID: 30
+Price: 26.0
+Stock: 2
+Manufacturer: Goldwell Manufacturing Services
+Brand: GOLDWELL
+Expiration Date: 2021
+Weight: 1.0
+Organic: false
+Medicated: false
+
+ID: 31
+Price: 13.0
+Stock: 1
+Manufacturer: Calvin Klein Inc.
+Brand: CALVIN KLEIN
+Expiration Date: 2025
+Weight: 250.0
+Organic: false
+Lasting_duration: 75
+
+ID: 32
+Price: 17.0
+Stock: 2
+Manufacturer: Hugo Boss Group
+Brand: HUGO BOSS
+Expiration Date: 2021
+Weight: 330.0
+Organic: false
+Lasting_duration: 110
+
+ID: 33
+Price: 11.0
+Stock: 3
+Manufacturer: Calvin Klein Inc.
+Brand: CALVIN KLEIN
+Expiration Date: 2019
+Weight: 500.0
+Organic: false
+Lasting_duration: 30
+
+ID: 34
+Price: 19.0
+Stock: 1
+Manufacturer: Beiersdorf Global AG.
+Brand: NIVEA
+Expiration Date: 2017
+Weight: 1.0
+Organic: false
+Baby sensitive: false
+
+ID: 35
+Price: 13.0
+Stock: 2
+Manufacturer: Clinique Laboratories
+Brand: CLINIQUE
+Expiration Date: 2025
+Weight: 1.0
+Organic: false
+Baby sensitive: false
+
+ID: 36
+Price: 9.0
+Stock: 3
+Manufacturer: Beiersdorf Global AG.
+Brand: NIVEA
+Expiration Date: 2022
+Weight: 0.0
+Organic: false
+Baby sensitive: false
+
+ID: 12
+Price: 1430.0
+Stock: 2
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 1000
+Box Color: white
+
+ID: 13
+Price: 1000.0
+Stock: 3
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Free-Dos
+CPU_Type: Intel Core i3
+RAM_Capacity: 8
+HDD_Capacity: 500
+Box Color: red
+
+ID: 14
+Price: 2100.0
+Stock: 4
+Manufacturer: Dell Inc.
+Brand: DELL
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 2000
+Box Color: black
+
+ID: 16
+Price: 3100.0
+Stock: 1
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 750
+ HDMI Support: false
+
+ID: 17
+Price: 3400.0
+Stock: 2
+Manufacturer: Apple Inc.
+Brand: APPLE
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: MAC OS
+CPU_Type: Intel Core i5
+RAM_Capacity: 8
+HDD_Capacity: 1000
+ HDMI Support: false
+
+ID: 18
+Price: 1800.0
+Stock: 3
+Manufacturer: Hewlett-Packard Company
+Brand: HP
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Free-Dos
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 300
+ HDMI Support: false
+
+ID: 19
+Price: 1700.0
+Stock: 4
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i3
+RAM_Capacity: 8
+HDD_Capacity: 500
+ HDMI Support: false
+
+ID: 20
+Price: 2050.0
+Stock: 5
+Manufacturer: Dell Inc.
+Brand: DELL
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Free-Dos
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 400
+ HDMI Support: false
+
+ID: 21
+Price: 90.0
+Stock: 1
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 100.0
+Operating_system: Android 4.4 (KitKat)
+CPU_Type: Qualcomm Quad-core
+RAM_Capacity: 1
+HDD_Capacity: 8
+Dimensions: 9
+
+ID: 22
+Price: 135.0
+Stock: 2
+Manufacturer: Samsung Electronics
+Brand: SAMSUNG
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 100.0
+Operating_system: Android 5.0.2 (Lollipop)
+CPU_Type: Samsung Exynos
+RAM_Capacity: 3
+HDD_Capacity: 32
+Dimensions: 11
+
+ID: 26
+Price: 700.0
+Stock: 1
+Manufacturer: Samsung Electronics
+Brand: SAMSUNG
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen type: Quad HD Super AMOLED
+
+ID: 27
+Price: 600.0
+Stock: 2
+Manufacturer: Sony Electronics Manufacturing
+Brand: SONY
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen type: Super AMOLED
+
+ID: 28
+Price: 1100.0
+Stock: 3
+Manufacturer: Apple Inc.
+Brand: APPLE
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen type: IPS LCD
+
+ID: 23
+Price: 900.0
+Stock: 1
+Manufacturer: Royal Philips Electronics of the Netherlands
+Brand: PHILIPS
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen Size: 43
+
+ID: 24
+Price: 1500.0
+Stock: 2
+Manufacturer: Samsung Electronics
+Brand: SAMSUNG
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen Size: 40
+
+ ID: 1
+Price: 2.0
+Stock: 1
+Release Date: 2016
+Cover Title: Everything We Keep
+Publiseher: Lake Union
+Author: [Ljava.lang.String;@5e9f23b4
+Pages: 306
+
+ ID: 4
+Price: 4.0
+Stock: 4
+Release Date: 1960
+Cover Title: To Kill a Mockingbird
+Publiseher: J. B.Lippincott & Co.
+Author: [Ljava.lang.String;@4783da3f
+Pages: 281
+
+ ID: 6
+Price: 10.0
+Stock: 1
+Release Date: Live North America
+Cover Title: 2016
+Composer: Gary Clark Jr.
+Song: [Ljava.lang.String;@378fd1ac
+
+ ID: 7
+Price: 5.0
+Stock: 2
+Release Date: One of the Boys
+Cover Title: 2008
+Composer: Katy Perry
+Song: [Ljava.lang.String;@49097b5d
+
+ ID: 8
+Price: 13.0
+Stock: 3
+Release Date: Red
+Cover Title: 2012
+Composer: Taylor Swift
+Song: [Ljava.lang.String;@6e2c634b
+
+ ID: 9
+Price: 21.0
+Stock: 4
+Release Date: Kind of Blue
+Cover Title: 1959
+Composer: Miles Davis
+Song: [Ljava.lang.String;@37a71e93
+
+ID: 29
+Price: 22.0
+Stock: 1
+Manufacturer: Henkel AG & Company
+Brand: SCHWARZKOPF
+Expiration Date: 2019
+Weight: 0.0
+Organic: false
+Medicated: false
+
+ID: 30
+Price: 26.0
+Stock: 2
+Manufacturer: Goldwell Manufacturing Services
+Brand: GOLDWELL
+Expiration Date: 2021
+Weight: 1.0
+Organic: false
+Medicated: false
+
+ID: 31
+Price: 13.0
+Stock: 1
+Manufacturer: Calvin Klein Inc.
+Brand: CALVIN KLEIN
+Expiration Date: 2025
+Weight: 250.0
+Organic: false
+Lasting_duration: 75
+
+ID: 32
+Price: 17.0
+Stock: 2
+Manufacturer: Hugo Boss Group
+Brand: HUGO BOSS
+Expiration Date: 2021
+Weight: 330.0
+Organic: false
+Lasting_duration: 110
+
+ID: 33
+Price: 11.0
+Stock: 3
+Manufacturer: Calvin Klein Inc.
+Brand: CALVIN KLEIN
+Expiration Date: 2019
+Weight: 500.0
+Organic: false
+Lasting_duration: 30
+
+ID: 34
+Price: 19.0
+Stock: 1
+Manufacturer: Beiersdorf Global AG.
+Brand: NIVEA
+Expiration Date: 2017
+Weight: 1.0
+Organic: false
+Baby sensitive: false
+
+ID: 35
+Price: 13.0
+Stock: 2
+Manufacturer: Clinique Laboratories
+Brand: CLINIQUE
+Expiration Date: 2025
+Weight: 1.0
+Organic: false
+Baby sensitive: false
+
+ID: 36
+Price: 9.0
+Stock: 3
+Manufacturer: Beiersdorf Global AG.
+Brand: NIVEA
+Expiration Date: 2022
+Weight: 0.0
+Organic: false
+Baby sensitive: false
+
+ID: 12
+Price: 1430.0
+Stock: 2
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 1000
+Box Color: white
+
+ID: 13
+Price: 1000.0
+Stock: 3
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Free-Dos
+CPU_Type: Intel Core i3
+RAM_Capacity: 8
+HDD_Capacity: 500
+Box Color: red
+
+ID: 14
+Price: 2100.0
+Stock: 4
+Manufacturer: Dell Inc.
+Brand: DELL
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 2000
+Box Color: black
+
+ID: 16
+Price: 3100.0
+Stock: 1
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 750
+ HDMI Support: false
+
+ID: 17
+Price: 3400.0
+Stock: 2
+Manufacturer: Apple Inc.
+Brand: APPLE
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: MAC OS
+CPU_Type: Intel Core i5
+RAM_Capacity: 8
+HDD_Capacity: 1000
+ HDMI Support: false
+
+ID: 18
+Price: 1800.0
+Stock: 3
+Manufacturer: Hewlett-Packard Company
+Brand: HP
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Free-Dos
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 300
+ HDMI Support: false
+
+ID: 19
+Price: 1700.0
+Stock: 4
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i3
+RAM_Capacity: 8
+HDD_Capacity: 500
+ HDMI Support: false
+
+ID: 20
+Price: 2050.0
+Stock: 5
+Manufacturer: Dell Inc.
+Brand: DELL
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Free-Dos
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 400
+ HDMI Support: false
+
+ID: 21
+Price: 90.0
+Stock: 1
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 100.0
+Operating_system: Android 4.4 (KitKat)
+CPU_Type: Qualcomm Quad-core
+RAM_Capacity: 1
+HDD_Capacity: 8
+Dimensions: 9
+
+ID: 22
+Price: 135.0
+Stock: 2
+Manufacturer: Samsung Electronics
+Brand: SAMSUNG
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 100.0
+Operating_system: Android 5.0.2 (Lollipop)
+CPU_Type: Samsung Exynos
+RAM_Capacity: 3
+HDD_Capacity: 32
+Dimensions: 11
+
+ID: 26
+Price: 700.0
+Stock: 1
+Manufacturer: Samsung Electronics
+Brand: SAMSUNG
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen type: Quad HD Super AMOLED
+
+ID: 27
+Price: 600.0
+Stock: 2
+Manufacturer: Sony Electronics Manufacturing
+Brand: SONY
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen type: Super AMOLED
+
+ID: 28
+Price: 1100.0
+Stock: 3
+Manufacturer: Apple Inc.
+Brand: APPLE
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen type: IPS LCD
+
+ID: 23
+Price: 900.0
+Stock: 1
+Manufacturer: Royal Philips Electronics of the Netherlands
+Brand: PHILIPS
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen Size: 43
+
+ID: 24
+Price: 1500.0
+Stock: 2
+Manufacturer: Samsung Electronics
+Brand: SAMSUNG
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen Size: 40
+
+ ID: 1
+Price: 2.0
+Stock: 1
+Release Date: 2016
+Cover Title: Everything We Keep
+Publiseher: Lake Union
+Author: [Ljava.lang.String;@5e9f23b4
+Pages: 306
+
+ ID: 4
+Price: 4.0
+Stock: 4
+Release Date: 1960
+Cover Title: To Kill a Mockingbird
+Publiseher: J. B.Lippincott & Co.
+Author: [Ljava.lang.String;@4783da3f
+Pages: 281
+
+ ID: 6
+Price: 10.0
+Stock: 1
+Release Date: Live North America
+Cover Title: 2016
+Composer: Gary Clark Jr.
+Song: [Ljava.lang.String;@378fd1ac
+
+ ID: 7
+Price: 5.0
+Stock: 2
+Release Date: One of the Boys
+Cover Title: 2008
+Composer: Katy Perry
+Song: [Ljava.lang.String;@49097b5d
+
+ ID: 8
+Price: 13.0
+Stock: 3
+Release Date: Red
+Cover Title: 2012
+Composer: Taylor Swift
+Song: [Ljava.lang.String;@6e2c634b
+
+ ID: 9
+Price: 21.0
+Stock: 4
+Release Date: Kind of Blue
+Cover Title: 1959
+Composer: Miles Davis
+Song: [Ljava.lang.String;@37a71e93
+
+ID: 29
+Price: 22.0
+Stock: 1
+Manufacturer: Henkel AG & Company
+Brand: SCHWARZKOPF
+Expiration Date: 2019
+Weight: 0.0
+Organic: false
+Medicated: false
+
+ID: 30
+Price: 26.0
+Stock: 2
+Manufacturer: Goldwell Manufacturing Services
+Brand: GOLDWELL
+Expiration Date: 2021
+Weight: 1.0
+Organic: false
+Medicated: false
+
+ID: 31
+Price: 13.0
+Stock: 1
+Manufacturer: Calvin Klein Inc.
+Brand: CALVIN KLEIN
+Expiration Date: 2025
+Weight: 250.0
+Organic: false
+Lasting_duration: 75
+
+ID: 32
+Price: 17.0
+Stock: 2
+Manufacturer: Hugo Boss Group
+Brand: HUGO BOSS
+Expiration Date: 2021
+Weight: 330.0
+Organic: false
+Lasting_duration: 110
+
+ID: 33
+Price: 11.0
+Stock: 3
+Manufacturer: Calvin Klein Inc.
+Brand: CALVIN KLEIN
+Expiration Date: 2019
+Weight: 500.0
+Organic: false
+Lasting_duration: 30
+
+ID: 34
+Price: 19.0
+Stock: 1
+Manufacturer: Beiersdorf Global AG.
+Brand: NIVEA
+Expiration Date: 2017
+Weight: 1.0
+Organic: false
+Baby sensitive: false
+
+ID: 35
+Price: 13.0
+Stock: 2
+Manufacturer: Clinique Laboratories
+Brand: CLINIQUE
+Expiration Date: 2025
+Weight: 1.0
+Organic: false
+Baby sensitive: false
+
+ID: 36
+Price: 9.0
+Stock: 3
+Manufacturer: Beiersdorf Global AG.
+Brand: NIVEA
+Expiration Date: 2022
+Weight: 0.0
+Organic: false
+Baby sensitive: false
+
+ID: 12
+Price: 1430.0
+Stock: 2
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 1000
+Box Color: white
+
+ID: 13
+Price: 1000.0
+Stock: 3
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Free-Dos
+CPU_Type: Intel Core i3
+RAM_Capacity: 8
+HDD_Capacity: 500
+Box Color: red
+
+ID: 14
+Price: 2100.0
+Stock: 4
+Manufacturer: Dell Inc.
+Brand: DELL
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 2000
+Box Color: black
+
+ID: 16
+Price: 3100.0
+Stock: 1
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 750
+ HDMI Support: false
+
+ID: 17
+Price: 3400.0
+Stock: 2
+Manufacturer: Apple Inc.
+Brand: APPLE
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: MAC OS
+CPU_Type: Intel Core i5
+RAM_Capacity: 8
+HDD_Capacity: 1000
+ HDMI Support: false
+
+ID: 18
+Price: 1800.0
+Stock: 3
+Manufacturer: Hewlett-Packard Company
+Brand: HP
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Free-Dos
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 300
+ HDMI Support: false
+
+ID: 19
+Price: 1700.0
+Stock: 4
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i3
+RAM_Capacity: 8
+HDD_Capacity: 500
+ HDMI Support: false
+
+ID: 20
+Price: 2050.0
+Stock: 5
+Manufacturer: Dell Inc.
+Brand: DELL
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Free-Dos
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 400
+ HDMI Support: false
+
+ID: 21
+Price: 90.0
+Stock: 1
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 100.0
+Operating_system: Android 4.4 (KitKat)
+CPU_Type: Qualcomm Quad-core
+RAM_Capacity: 1
+HDD_Capacity: 8
+Dimensions: 9
+
+ID: 22
+Price: 135.0
+Stock: 2
+Manufacturer: Samsung Electronics
+Brand: SAMSUNG
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 100.0
+Operating_system: Android 5.0.2 (Lollipop)
+CPU_Type: Samsung Exynos
+RAM_Capacity: 3
+HDD_Capacity: 32
+Dimensions: 11
+
+ID: 26
+Price: 700.0
+Stock: 1
+Manufacturer: Samsung Electronics
+Brand: SAMSUNG
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen type: Quad HD Super AMOLED
+
+ID: 27
+Price: 600.0
+Stock: 2
+Manufacturer: Sony Electronics Manufacturing
+Brand: SONY
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen type: Super AMOLED
+
+ID: 28
+Price: 1100.0
+Stock: 3
+Manufacturer: Apple Inc.
+Brand: APPLE
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen type: IPS LCD
+
+ID: 23
+Price: 900.0
+Stock: 1
+Manufacturer: Royal Philips Electronics of the Netherlands
+Brand: PHILIPS
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen Size: 43
+
+ID: 24
+Price: 1500.0
+Stock: 2
+Manufacturer: Samsung Electronics
+Brand: SAMSUNG
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen Size: 40
+
+ ID: 1
+Price: 2.0
+Stock: 1
+Release Date: 2016
+Cover Title: Everything We Keep
+Publiseher: Lake Union
+Author: [Ljava.lang.String;@5e9f23b4
+Pages: 306
+
+ ID: 4
+Price: 4.0
+Stock: 4
+Release Date: 1960
+Cover Title: To Kill a Mockingbird
+Publiseher: J. B.Lippincott & Co.
+Author: [Ljava.lang.String;@4783da3f
+Pages: 281
+
+ ID: 6
+Price: 10.0
+Stock: 1
+Release Date: Live North America
+Cover Title: 2016
+Composer: Gary Clark Jr.
+Song: [Ljava.lang.String;@378fd1ac
+
+ ID: 7
+Price: 5.0
+Stock: 2
+Release Date: One of the Boys
+Cover Title: 2008
+Composer: Katy Perry
+Song: [Ljava.lang.String;@49097b5d
+
+ ID: 8
+Price: 13.0
+Stock: 3
+Release Date: Red
+Cover Title: 2012
+Composer: Taylor Swift
+Song: [Ljava.lang.String;@6e2c634b
+
+ ID: 9
+Price: 21.0
+Stock: 4
+Release Date: Kind of Blue
+Cover Title: 1959
+Composer: Miles Davis
+Song: [Ljava.lang.String;@37a71e93
+
+ID: 29
+Price: 22.0
+Stock: 1
+Manufacturer: Henkel AG & Company
+Brand: SCHWARZKOPF
+Expiration Date: 2019
+Weight: 0.0
+Organic: false
+Medicated: false
+
+ID: 30
+Price: 26.0
+Stock: 2
+Manufacturer: Goldwell Manufacturing Services
+Brand: GOLDWELL
+Expiration Date: 2021
+Weight: 1.0
+Organic: false
+Medicated: false
+
+ID: 31
+Price: 13.0
+Stock: 1
+Manufacturer: Calvin Klein Inc.
+Brand: CALVIN KLEIN
+Expiration Date: 2025
+Weight: 250.0
+Organic: false
+Lasting_duration: 75
+
+ID: 32
+Price: 17.0
+Stock: 2
+Manufacturer: Hugo Boss Group
+Brand: HUGO BOSS
+Expiration Date: 2021
+Weight: 330.0
+Organic: false
+Lasting_duration: 110
+
+ID: 33
+Price: 11.0
+Stock: 3
+Manufacturer: Calvin Klein Inc.
+Brand: CALVIN KLEIN
+Expiration Date: 2019
+Weight: 500.0
+Organic: false
+Lasting_duration: 30
+
+ID: 34
+Price: 19.0
+Stock: 1
+Manufacturer: Beiersdorf Global AG.
+Brand: NIVEA
+Expiration Date: 2017
+Weight: 1.0
+Organic: false
+Baby sensitive: false
+
+ID: 35
+Price: 13.0
+Stock: 2
+Manufacturer: Clinique Laboratories
+Brand: CLINIQUE
+Expiration Date: 2025
+Weight: 1.0
+Organic: false
+Baby sensitive: false
+
+ID: 36
+Price: 9.0
+Stock: 3
+Manufacturer: Beiersdorf Global AG.
+Brand: NIVEA
+Expiration Date: 2022
+Weight: 0.0
+Organic: false
+Baby sensitive: false
+
+ID: 12
+Price: 1430.0
+Stock: 2
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 1000
+Box Color: white
+
+ID: 13
+Price: 1000.0
+Stock: 3
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Free-Dos
+CPU_Type: Intel Core i3
+RAM_Capacity: 8
+HDD_Capacity: 500
+Box Color: red
+
+ID: 14
+Price: 2100.0
+Stock: 4
+Manufacturer: Dell Inc.
+Brand: DELL
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 2000
+Box Color: black
+
+ID: 16
+Price: 3100.0
+Stock: 1
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 750
+ HDMI Support: false
+
+ID: 17
+Price: 3400.0
+Stock: 2
+Manufacturer: Apple Inc.
+Brand: APPLE
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: MAC OS
+CPU_Type: Intel Core i5
+RAM_Capacity: 8
+HDD_Capacity: 1000
+ HDMI Support: false
+
+ID: 18
+Price: 1800.0
+Stock: 3
+Manufacturer: Hewlett-Packard Company
+Brand: HP
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Free-Dos
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 300
+ HDMI Support: false
+
+ID: 19
+Price: 1700.0
+Stock: 4
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i3
+RAM_Capacity: 8
+HDD_Capacity: 500
+ HDMI Support: false
+
+ID: 20
+Price: 2050.0
+Stock: 5
+Manufacturer: Dell Inc.
+Brand: DELL
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Free-Dos
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 400
+ HDMI Support: false
+
+ID: 21
+Price: 90.0
+Stock: 1
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 100.0
+Operating_system: Android 4.4 (KitKat)
+CPU_Type: Qualcomm Quad-core
+RAM_Capacity: 1
+HDD_Capacity: 8
+Dimensions: 9
+
+ID: 22
+Price: 135.0
+Stock: 2
+Manufacturer: Samsung Electronics
+Brand: SAMSUNG
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 100.0
+Operating_system: Android 5.0.2 (Lollipop)
+CPU_Type: Samsung Exynos
+RAM_Capacity: 3
+HDD_Capacity: 32
+Dimensions: 11
+
+ID: 26
+Price: 700.0
+Stock: 1
+Manufacturer: Samsung Electronics
+Brand: SAMSUNG
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen type: Quad HD Super AMOLED
+
+ID: 27
+Price: 600.0
+Stock: 2
+Manufacturer: Sony Electronics Manufacturing
+Brand: SONY
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen type: Super AMOLED
+
+ID: 28
+Price: 1100.0
+Stock: 3
+Manufacturer: Apple Inc.
+Brand: APPLE
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen type: IPS LCD
+
+ID: 23
+Price: 900.0
+Stock: 1
+Manufacturer: Royal Philips Electronics of the Netherlands
+Brand: PHILIPS
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen Size: 43
+
+ID: 24
+Price: 1500.0
+Stock: 2
+Manufacturer: Samsung Electronics
+Brand: SAMSUNG
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen Size: 40
+
+ ID: 1
+Price: 2.0
+Stock: 1
+Release Date: 2016
+Cover Title: Everything We Keep
+Publiseher: Lake Union
+Author: [Ljava.lang.String;@5e9f23b4
+Pages: 306
+
+ ID: 4
+Price: 4.0
+Stock: 4
+Release Date: 1960
+Cover Title: To Kill a Mockingbird
+Publiseher: J. B.Lippincott & Co.
+Author: [Ljava.lang.String;@4783da3f
+Pages: 281
+
+ ID: 6
+Price: 10.0
+Stock: 1
+Release Date: Live North America
+Cover Title: 2016
+Composer: Gary Clark Jr.
+Song: [Ljava.lang.String;@378fd1ac
+
+ ID: 7
+Price: 5.0
+Stock: 2
+Release Date: One of the Boys
+Cover Title: 2008
+Composer: Katy Perry
+Song: [Ljava.lang.String;@49097b5d
+
+ ID: 8
+Price: 13.0
+Stock: 3
+Release Date: Red
+Cover Title: 2012
+Composer: Taylor Swift
+Song: [Ljava.lang.String;@6e2c634b
+
+ ID: 9
+Price: 21.0
+Stock: 4
+Release Date: Kind of Blue
+Cover Title: 1959
+Composer: Miles Davis
+Song: [Ljava.lang.String;@37a71e93
+
+ID: 29
+Price: 22.0
+Stock: 1
+Manufacturer: Henkel AG & Company
+Brand: SCHWARZKOPF
+Expiration Date: 2019
+Weight: 0.0
+Organic: false
+Medicated: false
+
+ID: 30
+Price: 26.0
+Stock: 2
+Manufacturer: Goldwell Manufacturing Services
+Brand: GOLDWELL
+Expiration Date: 2021
+Weight: 1.0
+Organic: false
+Medicated: false
+
+ID: 31
+Price: 13.0
+Stock: 1
+Manufacturer: Calvin Klein Inc.
+Brand: CALVIN KLEIN
+Expiration Date: 2025
+Weight: 250.0
+Organic: false
+Lasting_duration: 75
+
+ID: 32
+Price: 17.0
+Stock: 2
+Manufacturer: Hugo Boss Group
+Brand: HUGO BOSS
+Expiration Date: 2021
+Weight: 330.0
+Organic: false
+Lasting_duration: 110
+
+ID: 33
+Price: 11.0
+Stock: 3
+Manufacturer: Calvin Klein Inc.
+Brand: CALVIN KLEIN
+Expiration Date: 2019
+Weight: 500.0
+Organic: false
+Lasting_duration: 30
+
+ID: 34
+Price: 19.0
+Stock: 1
+Manufacturer: Beiersdorf Global AG.
+Brand: NIVEA
+Expiration Date: 2017
+Weight: 1.0
+Organic: false
+Baby sensitive: false
+
+ID: 35
+Price: 13.0
+Stock: 2
+Manufacturer: Clinique Laboratories
+Brand: CLINIQUE
+Expiration Date: 2025
+Weight: 1.0
+Organic: false
+Baby sensitive: false
+
+ID: 36
+Price: 9.0
+Stock: 3
+Manufacturer: Beiersdorf Global AG.
+Brand: NIVEA
+Expiration Date: 2022
+Weight: 0.0
+Organic: false
+Baby sensitive: false
+
+ID: 12
+Price: 1430.0
+Stock: 2
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 1000
+Box Color: white
+
+ID: 13
+Price: 1000.0
+Stock: 3
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Free-Dos
+CPU_Type: Intel Core i3
+RAM_Capacity: 8
+HDD_Capacity: 500
+Box Color: red
+
+ID: 14
+Price: 2100.0
+Stock: 4
+Manufacturer: Dell Inc.
+Brand: DELL
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 2000
+Box Color: black
+
+ID: 16
+Price: 3100.0
+Stock: 1
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 750
+ HDMI Support: false
+
+ID: 17
+Price: 3400.0
+Stock: 2
+Manufacturer: Apple Inc.
+Brand: APPLE
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: MAC OS
+CPU_Type: Intel Core i5
+RAM_Capacity: 8
+HDD_Capacity: 1000
+ HDMI Support: false
+
+ID: 18
+Price: 1800.0
+Stock: 3
+Manufacturer: Hewlett-Packard Company
+Brand: HP
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Free-Dos
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 300
+ HDMI Support: false
+
+ID: 19
+Price: 1700.0
+Stock: 4
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Windows 10 Home
+CPU_Type: Intel Core i3
+RAM_Capacity: 8
+HDD_Capacity: 500
+ HDMI Support: false
+
+ID: 20
+Price: 2050.0
+Stock: 5
+Manufacturer: Dell Inc.
+Brand: DELL
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 250.0
+Operating_system: Free-Dos
+CPU_Type: Intel Core i7
+RAM_Capacity: 16
+HDD_Capacity: 400
+ HDMI Support: false
+
+ID: 21
+Price: 90.0
+Stock: 1
+Manufacturer: AsusTek Computer Inc.
+Brand: ASUS
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 100.0
+Operating_system: Android 4.4 (KitKat)
+CPU_Type: Qualcomm Quad-core
+RAM_Capacity: 1
+HDD_Capacity: 8
+Dimensions: 9
+
+ID: 22
+Price: 135.0
+Stock: 2
+Manufacturer: Samsung Electronics
+Brand: SAMSUNG
+Maximum Allowed Input Voltage: 220.0
+Maximum Power Consumption: 100.0
+Operating_system: Android 5.0.2 (Lollipop)
+CPU_Type: Samsung Exynos
+RAM_Capacity: 3
+HDD_Capacity: 32
+Dimensions: 11
+
+ID: 26
+Price: 700.0
+Stock: 1
+Manufacturer: Samsung Electronics
+Brand: SAMSUNG
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen type: Quad HD Super AMOLED
+
+ID: 27
+Price: 600.0
+Stock: 2
+Manufacturer: Sony Electronics Manufacturing
+Brand: SONY
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen type: Super AMOLED
+
+ID: 28
+Price: 1100.0
+Stock: 3
+Manufacturer: Apple Inc.
+Brand: APPLE
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen type: IPS LCD
+
+ID: 23
+Price: 900.0
+Stock: 1
+Manufacturer: Royal Philips Electronics of the Netherlands
+Brand: PHILIPS
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen Size: 43
+
+ID: 24
+Price: 1500.0
+Stock: 2
+Manufacturer: Samsung Electronics
+Brand: SAMSUNG
+Maximum Allowed Input Voltage: 200.0
+Maximum Power Consumption: 240.0
+Screen Size: 40
+
+ ID: 1
+Price: 2.0
+Stock: 1
+Release Date: 2016
+Cover Title: Everything We Keep
+Publiseher: Lake Union
+Author: [Ljava.lang.String;@5e9f23b4
+Pages: 306
+
+ ID: 4
+Price: 4.0
+Stock: 4
+Release Date: 1960
+Cover Title: To Kill a Mockingbird
+Publiseher: J. B.Lippincott & Co.
+Author: [Ljava.lang.String;@4783da3f
+Pages: 281
+
+ ID: 6
+Price: 10.0
+Stock: 1
+Release Date: Live North America
+Cover Title: 2016
+Composer: Gary Clark Jr.
+Song: [Ljava.lang.String;@378fd1ac
+
+ ID: 7
+Price: 5.0
+Stock: 2
+Release Date: One of the Boys
+Cover Title: 2008
+Composer: Katy Perry
+Song: [Ljava.lang.String;@49097b5d
+
+ ID: 8
+Price: 13.0
+Stock: 3
+Release Date: Red
+Cover Title: 2012
+Composer: Taylor Swift
+Song: [Ljava.lang.String;@6e2c634b
+
+ ID: 9
+Price: 21.0
+Stock: 4
+Release Date: Kind of Blue
+Cover Title: 1959
+Composer: Miles Davis
+Song: [Ljava.lang.String;@37a71e93
+
+this is: Kubilay
+
+ ID: 1
+Price: 2.0
+Stock: 1
+Release Date: 2016
+Cover Title: Everything We Keep
+Publiseher: Lake Union
+Author: [Ljava.lang.String;@5e9f23b4
+Pages: 306
+
+ ID: 4
+Price: 4.0
+Stock: 4
+Release Date: 1960
+Cover Title: To Kill a Mockingbird
+Publiseher: J. B.Lippincott & Co.
+Author: [Ljava.lang.String;@4783da3f
+Pages: 281
+
+ID: 29
+Price: 22.0
+Stock: 1
+Manufacturer: Henkel AG & Company
+Brand: SCHWARZKOPF
+Expiration Date: 2019
+Weight: 0.0
+Organic: false
+Medicated: false
+
+ID: 30
+Price: 26.0
+Stock: 2
+Manufacturer: Goldwell Manufacturing Services
+Brand: GOLDWELL
+Expiration Date: 2021
+Weight: 1.0
+Organic: false
+Medicated: false
+
+ID: 31
+Price: 13.0
+Stock: 1
+Manufacturer: Calvin Klein Inc.
+Brand: CALVIN KLEIN
+Expiration Date: 2025
+Weight: 250.0
+Organic: false
+Lasting_duration: 75
+
+ID: 32
+Price: 17.0
+Stock: 2
+Manufacturer: Hugo Boss Group
+Brand: HUGO BOSS
+Expiration Date: 2021
+Weight: 330.0
+Organic: false
+Lasting_duration: 110
+
+ID: 33
+Price: 11.0
+Stock: 3
+Manufacturer: Calvin Klein Inc.
+Brand: CALVIN KLEIN
+Expiration Date: 2019
+Weight: 500.0
+Organic: false
+Lasting_duration: 30

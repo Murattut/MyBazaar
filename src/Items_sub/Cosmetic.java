@@ -1,6 +1,4 @@
 package Items_sub;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 
 public class Cosmetic extends Items{
     private String manufacturer;
@@ -60,15 +58,6 @@ public class Cosmetic extends Items{
     public void setOrganic(boolean organic) {
         this.organic = organic;
     }
-    /*
-    public void displayData() {
-        System.out.println("Price: " + getPrice());
-        System.out.println("Manufacturer: " + getManufacturer());
-        System.out.println("Brand: " + getBrand());
-        System.out.println("Expiration Date: " + getExpiration_date());
-        System.out.println("Weight: " + getWeight());
-        System.out.println("Organic: " + isOrganic());
-    }*/
 
     public Double getPrice() {
         return price;

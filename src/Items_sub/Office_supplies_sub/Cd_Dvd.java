@@ -1,9 +1,14 @@
 package Items_sub.Office_supplies_sub;
 import Items_sub.Office_supplies;
+
+import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.Objects;
+import java.util.stream.Collectors;
+
 public class Cd_Dvd extends Office_supplies {
     public static LinkedList<Cd_Dvd> cd_dvdLinkedList = new LinkedList<>();
-    private static int nextStock = 1;
+    private static Integer nextStock = 1;
     private Integer stock;
     private String composer;
     private String[] song;
@@ -27,13 +32,14 @@ public class Cd_Dvd extends Office_supplies {
         this.song = song;
     }
     public void displayData() {
-        System.out.println("\n ID: " + getId());
+        System.out.println("\nID: " + getId());
         System.out.println("Price: " + getPrice());
         System.out.println("Stock: " + getStock());
         System.out.println("Release Date: " + getRelease_date());
         System.out.println("Cover Title: " + getCover_title());
         System.out.println("Composer: " + getComposer());
-        System.out.println("Song: " + getSong());
+        System.out.println("Song: " + Arrays.stream(getSong()).filter(Objects::nonNull)
+                .collect(Collectors.joining(", ", "[", "]")));
     }
     public Integer getStock() {
         return stock;

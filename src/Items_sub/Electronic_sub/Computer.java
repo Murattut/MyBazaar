@@ -4,8 +4,8 @@ import Items_sub.Electronic;
 public class Computer extends Electronic {
     private String operating_system;
     private String CPU_Type;
-    private int RAM_Capacity;
-    private int HDD_Capacity;
+    private Integer RAM_Capacity;
+    private Integer HDD_Capacity;
 
     public Computer(double price, String manufacturer, String brand,
                     double maximum_allowed_input_voltage, double maximum_power_consumption,
@@ -32,7 +32,7 @@ public class Computer extends Electronic {
         this.CPU_Type = CPU_Type;
     }
 
-    public int getRAM_Capacity() {
+    public Integer getRAM_Capacity() {
         return RAM_Capacity;
     }
 
@@ -40,24 +40,11 @@ public class Computer extends Electronic {
         this.RAM_Capacity = RAM_Capacity;
     }
 
-    public int getHDD_Capacity() {
+    public Integer getHDD_Capacity() {
         return HDD_Capacity;
     }
 
     public void setHDD_Capacity(int HDD_Capacity) {
         this.HDD_Capacity = HDD_Capacity;
     }
-
-    //This fucnton is used to display the data of the computer but it is not used in the program
-    /*public void displayData() {
-        System.out.println("Price: " + getPrice());
-        System.out.println("Manufacturer: " + getManufacturer());
-        System.out.println("Brand: " + getBrand());
-        System.out.println("Maximum Allowed Input Voltage: " + getMaximum_allowed_input_voltage());
-        System.out.println("Maximum Power Consumption: " + getMaximum_power_consumption());
-        System.out.println("Operating_system: " + getOperating_system());
-        System.out.println("CPU_Type: "+ getCPU_Type());
-        System.out.println("RAM_Capacity: "+ getRAM_Capacity());
-        System.out.println("HDD_Capacity: " + getHDD_Capacity());
-    }*/
 }
