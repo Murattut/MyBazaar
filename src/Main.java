@@ -307,7 +307,7 @@ public class Main {
                 break;
             case "SHOWCAMPAIGNS":
                 Integer Customer_ID = Integer.valueOf(arguments.get(0));
-                Customers.Show_champaigns(Customer_ID);
+                Customers.Show_campaigns(Customer_ID);
                 break;
             case "ADDTOCART":
                 Integer customerId = Integer.parseInt(arguments.get(0));

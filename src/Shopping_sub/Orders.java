@@ -14,7 +14,7 @@ public class Orders{
     private int customerId;
     //customerId
 
-    public Orders(Double totalCost, LinkedList<Object> purchased_items, int customerId) {
+    public Orders(double totalCost, LinkedList<Object> purchased_items, int customerId) {
         this.orderDate = LocalDate.now();
         this.totalCost = totalCost;
         this.purchased_items = purchased_items;

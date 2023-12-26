@@ -111,7 +111,7 @@ public class Customers extends Person{
             System.out.printf("No customer with ID number "+ Id +" exists!\n");
         }
     }
-    public static void Show_champaigns(Integer Id){
+    public static void Show_campaigns(Integer Id){
         boolean is_customer_true = true;
         boolean is_campaign_true = true;
         for (Customers customer : customer_list) {
@@ -347,6 +347,7 @@ public class Customers extends Person{
                                    is_balance_enough = false;
                                    customer.setBalance(customer.getBalance() - total_price);
                                    Orders.order_list.add(new Orders(total_price, customer.shopping_cart, CustomerId));
+                                   customer.shopping_cart.removeAll(customer.shopping_cart);
                                    System.out.println("\nOrder placed successfully\n");
                                }
                            }
@@ -359,6 +360,7 @@ public class Customers extends Person{
                                    is_balance_enough = false;
                                    customer.setBalance(customer.getBalance() - total_price);
                                    Orders.order_list.add(new Orders(total_price, customer.shopping_cart, CustomerId));
+                                   customer.shopping_cart.removeAll(customer.shopping_cart);
                                    System.out.println("\nOrder placed successfully\n");
                                }
                            }
@@ -369,6 +371,7 @@ public class Customers extends Person{
                                    is_balance_enough = false;
                                    customer.setBalance(customer.getBalance() - total_price);
                                    Orders.order_list.add(new Orders(total_price, customer.shopping_cart, CustomerId));
+                                   customer.shopping_cart.removeAll(customer.shopping_cart);
                                    System.out.println("\nOrder placed successfully\n");
                                }
                            }
